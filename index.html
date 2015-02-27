@@ -38,10 +38,10 @@
 
 	  <!-- Any section element inside this container is displayed as a slide -->
 
-      
+
 	  <div class="slides">
 
-        <!-- Title Slide ################################################## -->
+        <!-- Title Slide ################################################### -->
 		<section>
           <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
 			<h1>Why</h1>
@@ -52,19 +52,53 @@
 			  <small>Presented by: Andy Choens</small>
 			</p>
           </div>
+          <aside class="notes">
+            <p>According
+            to <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">Wikipedia</a>:</p>
+            <code>
+              R is a programming language and software environment for
+              statistical computing and graphics. The R language is
+              widely used among statisticians and data miners for
+              developing statistical software and data
+              analysis. Polls, surveys of data miners, and studies of
+              scholarly literature databases show that R's popularity
+              has increased substantially in recent years.
+            </code>
+            <p>
+              This is not a WHY NOT SAS presentation. This is a Why R
+              presentation. By the end of the presentation, I hope to
+              have demonstrated that R is a relevant language in the
+              work we are doing today and will be even more relevant
+              in years to come.
+            </p>
+          </aside>
 		</section>
 
-        <!-- My Two URLs / Websites --------------------------------------- -->
+        <!-- Two URLs to Remember ------------------------------------------ -->
         <section>
           <h2>Two URLs To Remember:</h2>
           <ol>
             <li><a href="http://choens.github.io/why-r/">http://choens.github.io/why-r/</a></li>
             <li><a href="https://github.com/choens/why-r/">https://github.com/choens/why-r/</a></li>
           </ol>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li>The 1st link will let you see the presentation, as
+              it was presented here today.</li>
+              <li>The 2nd link will let you see all of the underlying
+              code used in today's presentation.</li>
+              <li>Later in the presentation, I will show some demo
+              output files and demo code files. These resources can be
+              found in the examples folder on GitHub which you can
+              access by following the 2nd link.</li>
+              <li>You are free to use any of these materials. This
+              presentation, slides, demo files, etc. are licensed
+              under the XXXX license.</li>
+            </ul>
+          </aside>
         </section>
 
-        <!-- Bad Reasons to Learn / Use R --------------------------------- -->
+        <!-- Bad Reasons to Learn / Use R ---------------------------------- -->
         <section>
           <h2>Bad Reasons To Learn / Use R </h2>
           <br/>
@@ -81,7 +115,9 @@
           <div style="display:inline-block; margin:0 auto; float:right; width:40%;">
             <img src="svg/bad.svg" height="100%" width="100%">
           </div>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            Advance: 3x
+          </aside>
         </section>
 
         <!-- Good Reasons to Learn / Use R -------------------------------- -->
@@ -97,57 +133,142 @@
               <li class="fragment">Ecosystem</li>
               <li class="fragment">Effective Communication</li>
               <li class="fragment">Future Opportunities</li>
-              <li class="fragment">Others Say Similar Things</li>
+              <li class="fragment">Don't Take My Word For It</li>
             </ul>
-          </div>            
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>Advance: One good reason to use R is because it is
+              open source. We will spend some time discussing how its
+              nature as an open source program directly contributes
+              to its utility as a research tool for reproducible,
+              transparent research.</li>
+              <li>Advance: The ecosystem of tools around R is nothing
+              short of AMAZING and it is getting more amazing every
+              single day, because ANYONE can contribute.</li>
+              <li>It is worth pointing out that R's incredible
+               ecosystem is a direct result of the fact it is an open
+               source program.</li>
+              <li>Advance: Because of the way R and its surrounding
+              ecosystem have developed, R has become an incredibly
+              powerful communications tool. As a researcher, my goal
+              is to affect policy. R is relevant to me, because it
+              helps me communicate effectively and transparently.</li>
+              <li>Advance: A perfectly reasonable, self-interested
+              reason to use any tool professionally is because you
+              think it will leed to future opportunities.</li>
+              <li>Knowing how to use SAS effectively is a good way to
+              make yourself eligible for a large number of job
+              opportunities. Knowing how to use both R and SAS
+              effectively makes you relevant to even more future job
+              opportunities.</li>
+              <li>Advance: But please. Don't take my word for it. See
+              what some of these people have to say.</li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Section: Open Source ========================================= -->
 		<section>
           <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
 			<h1>Open Source</h1>
-            <h2>Free as in freedom, not beer.</h2>
+            <h3>Free as in freedom, not beer.</h2>
           </div>a
           <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
             <img src="svg/r-logo.svg" height="75%" width="75%">
           </div>
           <aside class="notes">
-            <p>The term open source means different things to
-            different people. In a nutshell, people interpret it to
-              mean 'free'.</p>
-            
-              
+            <ul>
+              <li>
+                The term open source means different things to
+                different people. In a nutshell, people interpret it
+                to mean 'free'.
+              </li>
+              <li>
+                But it means much more than that. Open Source, or more
+                formally, Free and Open Source Software aka FOSS, is an
+                ideological method for the development, distribution
+                and use of software.
+              </li>
+              <li>
+                Yeah. That's a little heavey. We're less than 10
+                minutes into this and I'm pulling out the word
+                ideology.
+              </li>
+              <li>
+                But it is this ideology that drives so many of the
+                practical reasons people cite when choosing to use
+                R.
+              </li>
+              <li>
+                At the end, I'll give you links to a bunch of articles
+                written about R by the likes of the New York Times,
+                Fast Company, etc. These articles are great and they
+                reinforce some of the practical reasons to use R,
+                which we will get to momentarily.
+              </li>
+              <li>
+                But I do not want to lose sight of the fact that all
+                of those nuts and bolts, practical reasons to use R
+                ALL derive from the ideological choices made by the
+                R-Core team who lead the development of R.
+              </li>
+              <li>
+                I don't think R is competing with SAS and SPSS because
+                it is such a beautiful language. It isn't. It is
+                competing with them because of the side affects of
+                the decision to develop R in an open, inclusive and
+                transparent manner.
+              </li>
           </aside>
 		</section>
 
         <!-- Popular Examples: Open Source -------------------------------- -->
         <section>
-          <h2>Popular Examples: Open Source</h2>
+          <h2>Open Source Is Everywhere:</h2>
           <table>
-            <tr class="fragment" style="vertical-align:sub;">
-              <td><h3>Desktop:</h3></td>
-              <td><img src="png/firefox-256.png" height="128px" width="128px"></td>
-              <td><img src="png/thunderbird_logo-only_RGB.png" height="128px" width="128px"></td>
-              <td><img src="png/java.png" height="128px" width="128px"></td>
+            <tr>
+              <td><h3>FOSS:</h3></td>
+              <td>
+                <img src="png/firefox-256.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="png/adium-logo.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="png/java.png" height="128px" width="128px"
+                style="vertical-align:middle;">
+              </td>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="https://filezilla-project.org/">Filezilla</a></td>
+              <td style="text-align:center;"><a href="https://www.adium.im/">Adium</a></td>
+              <td style="text-align:center;"><a href="https://www.java.com/en/download/">Java</a></td>
             </tr>
-            <tr class="fragment" style="vertical-align:middle;">
-              <td><h3>Internet:</h3></td>
-              <td><img src="png/apache-logo.gif" height="128px" width="128px"></td>
-              <td><img src="png/mysql-logo.jpg" height="128px" width="128px"></td>
-              <td><img src="png/wordpress-logo-stacked-bg.png" height="128px" width="128px"></td>
+            <tr>
+              <td><h3>Based On:</h3></td>
+              <td>
+                <img src="png/Google-Chrome-icon.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="png/safari_logo_3023.jpg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="png/Android_Robot_200.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
             </tr>
-          </table>
-          <aside class="notes"></aside>
-        </section>
-
-        <!-- Built On: Open Source ---------------------------------------- -->
-        <section>
-          <h2>Built On: Open Source</h2>
-          <table>
-            <tr class="fragment" style="vertical-align:sub;">
-              <td><img src="png/Google-Chrome-icon.png" height="128px" width="128px"></td>
-              <td><img src="png/safari_logo_3023.jpg" height="128px" width="128px"></td>
-              <td><img src="png/Android_Robot_200.png" height="128px" width="128px"></td>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="http://www.google.com/chrome/">Chrome</a></td>
+              <td style="text-align:center;"><a href="https://www.apple.com/safari/">Safari</a></td>
+              <td style="text-align:center;"><a href="https://www.android.com/">Android</a></td>
+            </tr>
+            <tr>
             </tr>
           </table>
           <aside class="notes"></aside>
@@ -155,17 +276,49 @@
 
         <!-- DOH: Open Source --------------------------------------------- -->
         <section>
-          <h2>DOH: Open Source</h2>
+          <h2>Even @ DOH:</h2>
           <table>
-            <tr class="fragment" style="vertical-align:sub;">
-              <td><h3>Desktop:</h3></td>
-              <td><img src="png/Apps-FileZilla-Metro-icon.png" height="128px" width="128px"></td>
-              <td><img src="png/sql-workbench-j_12573.png" ></td>
+            <tr>
+              <td><h3>FOSS:</h3></td>
+              <td>
+                <img src="png/Apps-FileZilla-Metro-icon.png"
+                     height="128px" width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="png/workbench128.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="png/7-zip-logo.jpg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
             </tr>
-            <tr class="fragment" style="vertical-align:middle;">
-              <td><h3>Built On:</h3></td>
-              <td><img src="png/hp-vertica.jpeg" height="128px" width="128px"></td>
-              <td><img src="png/sas-logo.jpg" height="128px" width="128px"></td>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="https://filezilla-project.org/">Filezilla</a></td>
+              <td style="text-align:center;"><a href="http://www.sql-workbench.net/">SQL Workbench/J</a></td>
+              <td style="text-align:center;"><a href="http://www.7-zip.org/">7-Zip</a></td>
+            </tr>
+            <tr>
+              <td><h3>Based On:</h3></td>
+              <td>
+                <img src="png/hp-vertica.jpeg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="png/sas-logo.jpg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="http://www.vertica.com/">Vertica</a></td>
+              <td style="text-align:center;"><a href="http://www.sas.com/en_us/home.html">SAS</a></td>
+              <td></td>
+            </tr>
+            <tr>
             </tr>
           </table>
           <aside class="notes"></aside>
@@ -173,65 +326,74 @@
 
         <!-- Fact: Open Source is everywhere ------------------------------ -->
         <section>
-          <h1>Fact:</h1>
-          <h2>Open Source Software is everywhere.</h2>
-          <h2 class="fragment">But Why?</h2>
+          <h1>Why?</h1>
           <aside class="notes"></aside>
         </section>
 
         <!-- The Four Freedoms -------------------------------------------- -->
         <section>
           <h2> The Four Freedoms</h2>
-          <div style="display:inline-block; width:80%;">
-
-                <ol start ="0">
-                  <li>The freedom to run the program as you
-                    wish, for any purpose.</li>
-                  <li>The freedom to study how the program
-                    works, and change it so it does your
-                    computing as you wish.</li>
-                  <li>The freedom to redistribute copies so you
-                    can help your neighbor.</li>
-                  <li>The freedom to distribute copies of your
-                    modified versions to others. By doing this
-                    you can give the whole community a chance to
-                    benefit from your changes.</li>
-                </ol>
-          </div>
+          <ol start ="0">
+            <li>
+              The freedom to run the program for any purpose.
+            </li>
+            <li>
+              The freedom to study how the program works, and change
+              it to make it do what you wish.
+            </li>
+            <li>
+              The freedom to redistribute copies so you can help your
+              neighbor.
+            </li>
+            <li>
+              The freedom to improve the program, and release your
+              improvements (and modified versions in general) to the
+              public, so that the whole community benefits.
+            </li>
+          </ol>
           <br/>
           <img src="png/logo-fsf.org.png">
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Free_software">Wikipedia</a>,
+                lists the four freedoms associated with Free Software,
+                as defined by the Free Sotware Foundation as:
+              </li>
+              <li>
+                Richard Stallman wrote these, thinking about
+                software. But, at the time her was working at the AI
+                lab at MIT, so science is not an unknown idea to him.
+              </li>
+              <li>
+                I believe these four freedoms fit in well with the
+                scientific process.
+              </li>
+            </ul>
+          </aside>
         </section>
 
+        <!-- The Four Freedoms: Analytic Style ----------------------------- -->
         <section>
-          <h2>Much Talk About Open Data . . . </h2>
-          <aside class="notes"></aside>
-        </section>
-
-        <section>
-          <table>
-            <tr>
-              <td><h2>Open Data</h2></td>
-              <td></td>
-              <td><img src="png/ODI-logo-lg.png" style="vertical-align:middle;  margin-left:auto; margin-right:auto;"></td>
-            </tr>
-            <tr style="vertical-align:middle;">
-              <td><img src="png/python-logo.png" height="101px" width="300px" style=" display:block; vertical-align:middle; margin-left:auto; margin-right:auto;"></td>
-              <td><h2>Open Tools</h2></td>
-              <td><img src="svg/r-logo.svg" height="100px" width="100px" style="display:block; vertical-align:middle; margin-left:auto; margin-right:auto;"></td>
-            </tr>
-            <tr>
-              <td><img src="png/foas-logo.png" style="display:block; vertical-align:middle; margin-left:auto; margin-right:auto;"></td>
-              <td></td>
-              <td><h2>Open Access</h2></td>
-            </tr>
-          </table>
-
-          <svg width="100%" height="100%" version="1.0"
-               xmlns="http://www.w3.org/2000/svg">
-            <line x1="0.0" y1="0.0" x2="325.0" y2="238.0" stroke="#000000"/>
-          </svg> 
-          <aside class="notes"></aside>
+          <h2> The Four Freedoms: <small>Analytics Style</small></h2>
+          <ol start ="0">
+            <li>
+              The freedom to run the analysis for any purpose.
+            </li>
+            <li>
+              The freedom to study how the analysis works, and change
+              it to make it do what you wish.
+            </li>
+            <li>
+              The freedom to redistribute copies so you can help your
+              neighbor.
+            </li>
+            <li>
+              The freedom to improve the analysis, and release your
+              improvements (and modified versions in general) to the
+              public, so that the whole community benefits.
+            </li>
+          </ol>
         </section>
 
         <!-- Section: Ecosystem =========================================== -->
@@ -242,27 +404,69 @@
           <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
             <img src="svg/r-logo.svg" height="75%" width="75%">
           </div>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li>
+                The R ecosystem is vast. Because anyone can alter it,
+                extend it or otherwise bend it to their will, they
+                have.
+              </li>
+              <li>
+                R is for social science research, genetics,
+                econometrics and betting on Football (both types).
+              </li>
+              <li>
+                I'm going to give you a peek into this vast
+                ecosystem. But all I can't even begin to explain it
+                all. There's too much out there and quite frankly, I
+                don't understand half of it.
+              </li>
+              <li>
+                But don't worry. Neither will you.
+              </li>
+            </ul>
+          </aside>
 		</section>
-        
+
         <!-- Packages ----------------------------------------------------- -->
         <section>
           <h2>Packages</h2>
 
           TODO: Increasing number of R Packages
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
         </section>
 
-        <!-- Integration -------------------------------------------------- -->
+        <!-- Commercial Support -------------------------------------------- -->
         <section>
-          <h2>Integration</h2>
-          TODO: SAS/SPSS/
+          <h2>Commercial Support</h2>
+          TODO: SAS/SPSS/Vertica/Oracle/Hadoop/JMP/Mathematica/MATLAB/
+          <aside class="notes">
+            <ul>
+              <li>
+
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Interface Choices -------------------------------------------- -->
         <section>
           <h2>Interface Choices</h2>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Effective Communication -------------------------------------- -->
@@ -273,19 +477,31 @@
           <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
             <img src="svg/r-logo.svg" height="75%" width="75%">
           </div>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
 		</section>
 
         <!-- Literate Programming ----------------------------------------- -->
         <section>
           <h2>Literate Programming</h2>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Sharing Code ------------------------------------------------- -->
         <section>
           <h2>Sharing Code</h2>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Section: Future Opportunities ================================ -->
@@ -296,7 +512,11 @@
           <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
             <img src="svg/r-logo.svg" height="75%" width="75%">
           </div>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
 		</section>
 
         <!-- Accelerating Growth ------------------------------------------ -->
@@ -306,16 +526,16 @@
           <br/>
           <div style="width:50%; float:left;text-align: left;">
             <small><code>
-                      R 
+                      R
                       !"R D" !"A R" !"H R" !"R N" !toys !kids !" R Walgreen" !walmart !"HVAC R" !"R Bard"<br/>
-                      and ( "biostatistics" or "data analysis" or "data analyst" 
+                      and ( "biostatistics" or "data analysis" or "data analyst"
                             or "epidemiologist"<br/>
                             or "healthcare analysis" or "healthcare analyst"<br/>
                             or "statistical"<br/>
                       )<br/>
                       ,SAS
                       !"system administrator" !"school age" !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse<br/>
-                      and ( "biostatistics" or "data analysis" or "data analyst" 
+                      and ( "biostatistics" or "data analysis" or "data analyst"
                             or "epidemiologist"<br/>
                             or "healthcare analysis" or "healthcare analyst"<br/>
                             or "statistical"<br/>
@@ -327,7 +547,11 @@
               <img width="540" height="300" src="http://www.indeed.com/trendgraph/jobgraph.png?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" border="0" alt="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends graph">
             </a>
           </div>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Section: Others Say Similar Things ============================ -->
@@ -335,13 +559,17 @@
           <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
 			<h2>Others Say Similar Things</h2>
           </div>
-          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">              
-            <img src="svg/r-logo.svg" height="75%" width="75%">              
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r-logo.svg" height="75%" width="75%">
           </div>
-          <aside class="notes"></aside>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
 		</section>
 
-		
+
 	  </div>
 
 	</div>
