@@ -1,0 +1,49 @@
+# Minimal Markdown Example
+
+This is a simple, minimal example of R Markdown. R
+
+
+```{r}
+
+library(ggplot)
+
+data(mtcars)
+
+```
+
+```{r}
+
+print(mtcars)
+
+```
+
+
+```{r}
+
+table(mtcars$cyl)
+
+```
+
+```{r}
+
+hist( mtcars$disp)
+
+```
+
+```{r}
+
+hist(mtcars$mpg, )
+
+```
+
+```{r}
+
+plot( mtcars$cyl, mtcars$mpg)
+
+```
+
+```{r}
+
+plot( mtcars$disp, mtcars$mpg)
+
+```
