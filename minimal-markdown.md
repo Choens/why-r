@@ -8,36 +8,41 @@ purpose of this report is two fold:
 2. Provide an accessible introduction to Literate Programming.
 
 
-```{r}
 
+```r
 ## Init R and Config
 library(ggplot2)
 data(mtcars)
-
 ```
 
 ## Engine Displacement
 
-```{r}
 
+```r
 qplot(disp, data=mtcars, xlab="Diplacement", ylab="N Cars", geom="histogram", binwidth=100)
-
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
+
+```r
 qplot(mpg, data=mtcars, xlab="MPG", ylab="N Cars", geom="histogram", binwidth=5)
-
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
+
+```r
 ggplot(data = mtcars, aes(x=disp, y=mpg)) + geom_point(shape=1) + geom_smooth(method=lm)
-
 ```
 
-```{r}
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
+
+```r
 cor( mtcars$disp, mtcars$mpg)
+```
 
+```
+## [1] -0.8475514
 ```

@@ -2,68 +2,6 @@
 <html lang="en">
 
     <head>
-<style type="text/css">
-.knitr.inline {
-  background-color: #f7f7f7;
-  border:solid 1px #B0B0B0;
-}
-.error {
-	font-weight: bold;
-	color: #FF0000;
-},
-.warning {
-	font-weight: bold;
-}
-.message {
-	font-style: italic;
-}
-.source, .output, .warning, .error, .message {
-	padding: 0em 1em;
-  border:solid 1px #F7F7F7;
-}
-.source {
-  background-color: #f5f5f5;
-}
-.rimage.left {
-  text-align: left;
-}
-.rimage.right {
-  text-align: right;
-}
-.rimage.center {
-  text-align: center;
-}
-.hl.num {
-  color: #AF0F91;
-}
-.hl.str {
-  color: #317ECC;
-}
-.hl.com {
-  color: #AD95AF;
-  font-style: italic;
-}
-.hl.opt {
-  color: #000000;
-}
-.hl.std {
-  color: #585858;
-}
-.hl.kwa {
-  color: #295F94;
-  font-weight: bold;
-}
-.hl.kwb {
-  color: #B05A65;
-}
-.hl.kwc {
-  color: #55aa55;
-}
-.hl.kwd {
-  color: #BC5A65;
-  font-weight: bold;
-}
-</style>
 	    <meta charset="utf-8">
 
 	    <title>Why R</title>
@@ -807,121 +745,22 @@
                   <h2>MTCARS - The Data</h2>
 
                   <small>
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl kwd">data</span><span class="hl std">(mtcars)</span>
-    <span class="hl kwd">kable</span><span class="hl std">(</span><span class="hl kwd">head</span><span class="hl std">(mtcars))</span>
-</pre></div>
-<table>
- <thead>
-  <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:right;"> mpg </th>
-   <th style="text-align:right;"> cyl </th>
-   <th style="text-align:right;"> disp </th>
-   <th style="text-align:right;"> hp </th>
-   <th style="text-align:right;"> drat </th>
-   <th style="text-align:right;"> wt </th>
-   <th style="text-align:right;"> qsec </th>
-   <th style="text-align:right;"> vs </th>
-   <th style="text-align:right;"> am </th>
-   <th style="text-align:right;"> gear </th>
-   <th style="text-align:right;"> carb </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Mazda RX4 </td>
-   <td style="text-align:right;"> 21.0 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 160 </td>
-   <td style="text-align:right;"> 110 </td>
-   <td style="text-align:right;"> 3.90 </td>
-   <td style="text-align:right;"> 2.620 </td>
-   <td style="text-align:right;"> 16.46 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Mazda RX4 Wag </td>
-   <td style="text-align:right;"> 21.0 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 160 </td>
-   <td style="text-align:right;"> 110 </td>
-   <td style="text-align:right;"> 3.90 </td>
-   <td style="text-align:right;"> 2.875 </td>
-   <td style="text-align:right;"> 17.02 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Datsun 710 </td>
-   <td style="text-align:right;"> 22.8 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 108 </td>
-   <td style="text-align:right;"> 93 </td>
-   <td style="text-align:right;"> 3.85 </td>
-   <td style="text-align:right;"> 2.320 </td>
-   <td style="text-align:right;"> 18.61 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Hornet 4 Drive </td>
-   <td style="text-align:right;"> 21.4 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 258 </td>
-   <td style="text-align:right;"> 110 </td>
-   <td style="text-align:right;"> 3.08 </td>
-   <td style="text-align:right;"> 3.215 </td>
-   <td style="text-align:right;"> 19.44 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Hornet Sportabout </td>
-   <td style="text-align:right;"> 18.7 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 360 </td>
-   <td style="text-align:right;"> 175 </td>
-   <td style="text-align:right;"> 3.15 </td>
-   <td style="text-align:right;"> 3.440 </td>
-   <td style="text-align:right;"> 17.02 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Valiant </td>
-   <td style="text-align:right;"> 18.1 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 225 </td>
-   <td style="text-align:right;"> 105 </td>
-   <td style="text-align:right;"> 2.76 </td>
-   <td style="text-align:right;"> 3.460 </td>
-   <td style="text-align:right;"> 20.22 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-</tbody>
-</table>
-
-</div></div>
-                    <p style="text-align:left;">. . .
+                    <!--begin.rcode
+                        data(mtcars)
+                        kable(head(mtcars))
+                        end.rcode-->
                   </small>
                   
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                          <li>
+                            So, this is the first 10 lines of the
+                            mtcars data set.
+                          </li>
+                          <li>
+                            We are going to focus on the mpg, cyl, and
+                            disp columns.
+                          </li>
                         </ul>
                     </aside>
                 </section>
