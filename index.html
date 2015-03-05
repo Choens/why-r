@@ -211,9 +211,9 @@
                         <ul>              
                             <li class="fragment">Ecosystem</li>
                             <li class="fragment">Literate Programming</li>
-                            <li class="fragment">Open Source</li>
+                            <li class="fragment">Open Source / Open Science</li>
                             <li class="fragment">Future Opportunities</li>
-                            <li class="fragment">Don't Take My Word For It</li>
+                            <li class="fragment">Everyone Writes About R</li>
                         </ul>
                     </div>
                     <aside class="notes">
@@ -518,7 +518,7 @@
                 
                 <!-- Diverse Examples -------------------------------------- -->
                 <section>
-                    <h2>Package ????</h2>
+                  <h2>Package Craziness</h2>
                     <table style="width:100%;">
                         <tr>
                             <td style="width:50%; text-align:center;">
@@ -698,7 +698,9 @@
 
                 <section>
                     <h2>Interface - RStudio</h2>
-                    <a href="img/screenshots/RStudio.png"><img src="img/screenshots/RStudio.png" width="1920px%"></a>
+                    <a href="img/screenshots/RStudio.png">
+                      <img src="img/screenshots/RStudio.png" width="100%">
+                    </a>
                     <aside class="notes">
                         <ul>
                             <li>
@@ -716,8 +718,10 @@
                 </section>
 
                 <section>
-                    <h2>Interface - ESS</h2>
-                    <a href="img/screenshots/ESS.png"><img src="img/screenshots/ESS.png" width="100%"></a>
+                    <h2>Interface - EMACS / ESS</h2>
+                    <a href="img/screenshots/ESS.png">
+                      <img src="img/screenshots/ESS.png" width="100%">
+                    </a>
                     <aside class="notes">
                         <ul>
                             <li>
@@ -736,7 +740,9 @@
 
                 <section>
                     <h2>Interface - Eclipse/Statet</h2>
-                    <a href="img/screenshots/Eclipse.png"><img src="img/screenshots/Eclipse.png" width="100%"></a>
+                    <a href="img/screenshots/Eclipse.png">
+                      <img src="img/screenshots/Eclipse.png" width="100%">
+                    </a>
                     <aside class="notes">
                         <ul>
                             <li>
@@ -762,17 +768,70 @@
 
                 <section>
                     <h2>Interface - JASP</h2>
-                    <a href="img/screenshots/JASP.png"><img src="img/screenshots/JASP.png" width="100%"></a>
+                    <a href="img/screenshots/JASP.png">
+                      <img src="img/screenshots/JASP.png" width="100%">
+                    </a>
                     <aside class="notes">
                         <ul>
                             <li>
-
+                              I should note, I learned about this
+                              project only two days ago. If you
+                              download or experiment with this
+                              application, it may eat your computer.
                             </li>
                             <li>
-
+                              That said, this is an interesting effort
+                              to take an interface, SPSS, familiar to
+                              many social sciences students, and
+                              reimplement a similar interface that
+                              generates R syntax, rather than SPSS
+                              syntax.
+                            </li>
+                            <li>
+                              Will this succeed? I have no idea. But,
+                              it gives you an idea of how R is seen as
+                              the go-to language, the lingua franca,
+                              of statistics.
                             </li>
                         </ul>
                     </aside>
+                </section>
+
+                <section>
+                  <h2>SHINY</h2>
+                  <a href="img/screenshots/shiny.png">
+                    <img src="img/screenshots/shiny.png" width="100%">
+                  </a>
+                  <aside class="notes">
+                    <ul>
+                      <li>
+                        But what if you want to deploy a custom
+                        interface? An interface to help an end-user
+                        understand a specific idea? What if you don't
+                        want to separate your code from your
+                        presentation?
+                      </li>
+                      <li>
+                        SHINY is here to help. This is an extension to
+                        R that allows you to build dashboards and
+                        complex analytic websites in R. We will
+                        explore this particlar dashboard in more
+                        detail shortly.
+                      </li>
+                      <li>
+                        If you want a modern, powerful interface, for
+                        programming, interactive research or
+                        presentation, R has an option that at the very
+                        least rivals anything else on the market.
+                      </li>
+                      <li>
+                        Total cost for the software seen in this
+                        presentation? Nothing. At its best, science is
+                        a meritocracy. R, and the dynamic ecosystem
+                        around it epitomizes this meritocratic spirit.
+                      </li>
+                    </ul>
+                  </aside>
                 </section>
                 
 
@@ -786,7 +845,49 @@
                     </div>
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                          <li>
+                            From Wikipedia: The literate programming
+                            paradigm, as conceived by Knuth,
+                            represents a move away from writing
+                            programs in the manner and order imposed
+                            by the computer, and instead enables
+                            programmers to develop programs in the
+                            order demanded by the logic and flow of
+                            their thoughts. Literate programs are
+                            written as an uninterrupted exposition of
+                            logic in an ordinary human language, much
+                            like the text of an essay, in which macros
+                            are included to hide abstractions and
+                            traditional source code.
+                          </li>
+                          <li>
+                            In other words . . . let's stop writing
+                            reports and papers by running an analysis
+                            and then cutting and pasting the results
+                            into Word. This is an approach to science
+                            that combines the writing and the
+                            programming as a single, cohesive piece.
+                          </li>
+                          <li>
+                            Literate Programming is a vast topic and
+                            is worthy of multiple presentations in its
+                            own right. Donald Knuth's ideas have had a
+                            deep impact on how I prefer to approach
+                            science. For the next few minutes, I would
+                            like to show you some simple examples of
+                            what literate programming means, to me.
+                          </li>
+                          <li>
+                            At this point, it is worth pointing out,
+                            this presentation is an example of
+                            literate programming. In the following
+                            slides, we will look at some data, and
+                            pictures. I didn't cut and paste this
+                            information into this slide show. I
+                            embedded it into the slide show. Let me
+                            show you what I mean. But, to do that, I
+                            need a data set.
+                          </li>
                         </ul>
                     </aside>
 		        </section>
@@ -794,7 +895,7 @@
                 <!-- MTCARS ------------------------------------------------ -->
                 <section>
                     <h2>MTCARS</h2>
-                    <p>
+                    <p style="text-align:left;">
                         The data was extracted from the 1974 Motor
                         Trend US magazine, and comprises fuel
                         consumption and 10 aspects of automobile
@@ -804,7 +905,7 @@
                 </section>
 
                 <section>
-                  <h2>MTCARS - The Data</h2>
+                  <h2>MTCARS - Just A Glimpse</h2>
 
                   <small>
 <div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl kwd">data</span><span class="hl std">(mtcars)</span>
@@ -916,20 +1017,196 @@
 </table>
 
 </div></div>
-                    <p style="text-align:left;">. . .
                   </small>
+                  <p>Source: <a href="http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html</a>
                   
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                          <li>
+                            This is the first 10 lines of the
+                            mtcars data set.
+                          </li>
+                          <li>
+                            We are going to focus on the mpg, cyl, and
+                            disp columns.
+                          </li>
+                          <li>
+                            Here, I am displaying the code used to
+                            produce the tabular display. As we will
+                            see, I don't have to do that. Sometimes it
+                            is beneficial to do so. Usually it is not.
+                          </li>
+                          <li>
+                            mpg 	Miles/(US) gallon
+                          </li>
+                          <li>
+                            cyl 	Number of cylinders
+                          </li>
+                          <li>
+                            disp 	Displacement (cu.in.)
+                          </li>
+                          <li>
+                            hp 	Gross horsepower
+                          </li>
+                          <li>
+                            drat 	Rear axle ratio
+                          </li>
+                          <li>
+                            wt 	Weight (lb/1000)
+                          </li>
+                          <li>
+                            qsec 	1/4 mile time
+                          </li>
+                          <li>
+                            vs 	V/S
+                          </li>
+                          <li>
+                            am 	Transmission (0 = automatic, 1 =
+                            manual)
+                          </li>
+                          <li>
+                            gear 	Number of forward gears
+                          </li>
+                          <li>
+                            carb 	Number of carburetors
+                          </li>
                         </ul>
                     </aside>
                 </section>
+
+                <section>
+                  <h2> R Markdown</h2>
+                  <small style="text-align:left;">
+                    <code style="text-align:left;">
+                      ---<br/>
+                      title: Minimal Markdown Example<br/>
+                      author: Andy Choens, MSW<br/>
+                      ---<br/>
+                      <br/>
+                      This is a simple, minimal example of report written in R markdown. The
+                      purpose of this report is two fold:<br/>
+                      <br/>
+                      1. To enlighten you about the relationship between engine displacement
+                      and gas mileage.<br/>
+                      2. Provide an accessible introduction to Literate Programming.<br/>
+                      <br/>
+                      The source of the data is the 1974 Motor Trend USA Magazine.<br/>
+                      <br/>
+                      ```{r echo=FALSE}<br/>
+                      <br/>
+                      ## Init R and Config<br/>
+                      library(ggplot2)<br/>
+                      data(mtcars)<br/>
+                      <br/>
+                      ```<br/>
+                    </code>
+                  </small>
+                  <aside class="notes">
+                    <ul>
+                      <li>
+                        You can build a literate programming in HTML,
+                        Word, LaTeX, etc. And all of those languages
+                        and tools have their place. But right now I
+                        want to focus on something called R Markdown.
+                      </li>
+                      <li>
+                        Walk through the parts of the document.
+                      </li>
+                      <li>
+                        95 lines of text and programming.
+                      </li>
+                    </ul>
+                  </aside>
+                </section>
+
+                <section>
+                  <h2>Insert a Graph</h2>
+                  <small style="text-align:left;">
+                    <code>
+                      # Scatterplot<br/>
+                      <br/>
+                      Displacement is the independent variable. Gas mileage is the dependent
+                      variable. Correlation does not imply causation, except for this time
+                      when it does.<br/>
+                      <br/>
+                      ```{r echo=FALSE}<br/>
+                      <br/>
+                      ggplot(data = mtcars, aes(x=disp, y=mpg)) + geom_point(shape=1) + geom_smooth(method=lm)<br/>
+                      <br/>
+                      ```<br/>
+                    </code>
+                  </small>
+                </section>
+
+                <section>
+                  <h2>Real Output</h2>
+                  <ul>
+                    <li>
+                       <a href="vignettes/minimal-markdown.Rmd">Code</a>
+                    </li>
+                    <li>
+                       <a href="vignettes/minimal-markdown.pdf">PDF: <small><code>render("vignettes/minimal-markdown.Rmd", pdf_document())</code></small></a>
+                    </li>
+                    <li>
+                       <a href="vignettes/minimal-markdown.docx">Word: <small><code>render("vignettes/minimal-markdown.Rmd", word_document())</code></small></a>
+                    </li>
+                    <li>
+                       <a href="vignettes/minimal-markdown.html">HTML: <small><code>render("vignettes/minimal-markdown.Rmd", html_document())</code></small></a>
+                    </li>
+                    <aside class="notes">
+                      <ul>
+                        <li>
+                          Literate programming removes errors due to
+                          cutting and pasting. The output is transparent
+                          and reproducible. 
+                        </li>
+                        <li>
+                          It is transparent, because you can look at
+                          the data and look at the code and know where
+                          the numbers come from. It is reproducible,
+                          because I will get the exact same results
+                          EVERY time I run this "report".
+                        </li>
+                        <li>
+                          And if you give me a new data set (formatted
+                          the same way), I can spit out a new, equally
+                          accurate report in seconds. You cannot make
+                          these claims when you assemble a report by hand.
+                        </li>
+                        <li>
+                          Court example.
+                        </li>
+                    </aside>
+                </section>
+
+                <section>
+                  <h2>The Return of SHINY</h2>
+                  <a href="http://choens.shinyapps.io/why-r-shiny">
+                    <img src="img/screenshots/shiny.png" width="100%">
+                  </a>
+                  <aside class="notes">
+                    <ul>
+                      <li>
+                        R SHINY, the customizable interface for R is
+                        another, more complex form of literate programming.
+                      </li>
+                      <li>
+                        In this case, it is interactive.
+                      </li>
+                      <li>
+                        And that is awesome.
+                      </li>
+                      <li>
+                        
+                      </li>
+                    </ul>
+                  </aside>
+                </section>
                 
-                <!-- Section: Open Source ========================================= -->
+                <!-- Section: Open Source / Open Science =================== -->
 		        <section>
                     <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h1>Open Source</h1>
+			            <h2>Open Source /<br/> Open Science</h2>
                         <h3>Free as in freedom, not beer.</h2>
                     </div>
                     <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
@@ -949,11 +1226,6 @@
                                 and use of software.
                             </li>
                             <li>
-                                Yeah. That's a little heavey. We're less than 10
-                                minutes into this and I'm pulling out the word
-                                ideology.
-                            </li>
-                            <li>
                                 But it is this ideology that drives so many of the
                                 practical reasons people cite when choosing to use
                                 R.
@@ -969,11 +1241,27 @@
                                 development of R.
                             </li>
                             <li>
-                                I don't think R is competing with SAS and SPSS because
-                                it is such a beautiful language. It isn't. It is
-                                competing with them because of the side affects of
-                                the decision to develop R in an open, inclusive and
-                                transparent manner.
+                              The R ecosystem operates as a
+                              meritocracy. Anyone can contribute. Your
+                              ability to use the technology and to
+                              contribute to its development is not
+                              limited by the need to purchase an
+                              expensive license. The SAS institute
+                              could develop a SAS version of
+                              SHINY. Maybe it already has. But SHINY
+                              is free. SHINY can be used as easily by
+                              someone in Mozambique as it can in New
+                              York. And . . . . it is.
+                            </li>
+                            <li>
+                              I don't think R is competing with SAS
+                              and SPSS because it is such a beautiful
+                              language. It isn't. It is competing with
+                              them because of the side affects of the
+                              decision to develop R in an open,
+                              inclusive and transparent
+                              manner. Transparency, and a tradition of
+                              sharing code results in better science.
                             </li>
                     </aside>
 		        </section>
@@ -985,7 +1273,7 @@
                         <tr>
                             <td><h3>FOSS:</h3></td>
                             <td>
-                                <img src="img/logos/firefox.png" height="128px"
+                                <img src="img/logos/firefox.jpg" height="128px"
                                      width="128px" style="vertical-align:middle;">
                             </td>
                             <td>
@@ -998,7 +1286,7 @@
                             </td>
                             <tr>
                                 <td></td>
-                                <td style="text-align:center;"><a href="https://filezilla-project.org/">Filezilla</a></td>
+                                <td style="text-align:center;"><a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></td>
                                 <td style="text-align:center;"><a href="https://www.adium.im/">Adium</a></td>
                                 <td style="text-align:center;"><a href="https://www.java.com/en/download/">Java</a></td>
                             </tr>
@@ -1026,7 +1314,17 @@
                             <tr>
                             </tr>
                     </table>
-                    <aside class="notes"></aside>
+                    <aside class="notes">
+                      <ul>
+                        <li>
+                          Many people feel that open source software
+                          isn't mainstream. It is mainstream. It is
+                          everywhere. If you have ever used a
+                          computer, you have used open source
+                          software.
+                        </li>
+                      </ul>
+                    </aside>
                 </section>
 
                 <!-- DOH: Open Source --------------------------------------------- -->
@@ -1035,15 +1333,15 @@
                     <table>
                         <tr>
                             <td><h3>FOSS:</h3></td>
-                            <td>
+                            <td style="text-align:center;">
                                 <img src="img/logos/filezilla.png"
                                      height="128px" width="128px" style="vertical-align:middle;">
                             </td>
-                            <td>
+                            <td style="text-align:center;">
                                 <img src="img/logos/workbench.png" height="128px"
                                      width="128px" style="vertical-align:middle;">
                             </td>
-                            <td>
+                            <td style="text-align:center;">
                                 <img src="img/logos/7-zip.jpg" height="128px"
                                      width="128px" style="vertical-align:middle;">
                             </td>
@@ -1056,15 +1354,15 @@
                         </tr>
                         <tr>
                             <td><h3>Based On:</h3></td>
-                            <td>
+                            <td style="text-align:center;">
                                 <img src="img/logos/hp-vertica.jpeg" height="128px"
                                      width="128px" style="vertical-align:middle;">
                             </td>
-                            <td>
+                            <td style="text-align:center;"> 
                                 <img src="img/logos/SAS.jpg" height="128px"
                                      width="128px" style="vertical-align:middle;">
                             </td>
-                            <td>
+                            <td style="text-align:center;">
                             </td>
                         </tr>
                         <tr>
@@ -1122,34 +1420,19 @@
                             </li>
                             <li>
                                 I believe these four freedoms fit in well with the
-                                scientific process.
+                                scientific process. Replace the word
+                                program with analysis. And re-read it.
                             </li>
                         </ul>
                     </aside>
                 </section>
 
-                <!-- The Four Freedoms: Analytic Style ----------------------------- -->
                 <section>
-                    <h2> The Four Freedoms: <small>Analytics Style</small></h2>
-                    <ol start ="0">
-                        <li>
-                            The freedom to run the analysis for any purpose.
-                        </li>
-                        <li>
-                            The freedom to study how the analysis works, and change
-                            it to make it do what you wish.
-                        </li>
-                        <li>
-                            The freedom to redistribute copies so you can help your
-                            neighbor.
-                        </li>
-                        <li>
-                            The freedom to improve the analysis, and release your
-                            improvements (and modified versions in general) to the
-                            public, so that the whole community benefits.
-                        </li>
-                    </ol>
-                </section>       
+                  <h2>Real: Code, Science, People</h2>
+                  <img src="img/logos/nightscout.png">
+                  <h3>This ain't Fish Science</h3>
+                </section>
+                
 
                 <!-- Section: Future Opportunities ================================ -->
                 <section>
@@ -1166,32 +1449,39 @@
                     </aside>
 		        </section>
 
+                <section>
+                    <h2>Jobs</h2>
+                    <br/>
+                      <img src="img/fig_1a_indeedjobs2014ge2501.png"
+                           caption="The number of analytics jobs for
+                    the more popular software (250 jobs or more,
+                    2/2014)."
+                           style="position: relative; top:-75px;
+                                  z-index:-1;"
+                           >
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+                
                 <!-- Accelerating Growth ------------------------------------------ -->
                 <section>
-                    <h2>Accelerating Growth</h2>
-                    <h3>Indeed.com</h3>
+                    <h2>Who Wants A Job?</h2>
                     <br/>
-                    <div style="width:50%; float:left;text-align: left;">
-                        <small><code>
-                      R
-                      !"R D" !"A R" !"H R" !"R N" !toys !kids !" R Walgreen" !walmart !"HVAC R" !"R Bard"<br/>
-                      and ( "biostatistics" or "data analysis" or "data analyst"
-                            or "epidemiologist"<br/>
-                            or "healthcare analysis" or "healthcare analyst"<br/>
-                            or "statistical"<br/>
-                      )<br/>
-                      ,SAS
-                      !"system administrator" !"school age" !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse<br/>
-                      and ( "biostatistics" or "data analysis" or "data analyst"
-                            or "epidemiologist"<br/>
-                            or "healthcare analysis" or "healthcare analyst"<br/>
-                            or "statistical"<br/>
-                      )
-                        </code></small>
+                    
+                    <div style="width:50%; float:left;text-align:
+                                left;">
+                      <h3>Comparative Number of Jobs</h3>
+                      <a href="http://www.indeed.com/jobtrends?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" title="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends">
+                            <img width="540" height="300" src="img/indeed-jobgraph.png">
+                        </a>
                     </div>
                     <div style="width:50%; float:right;">
+                      <h3>Growth over Time</h3>
                         <a href="http://www.indeed.com/jobtrends?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" title="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends">
-                            <img width="540" height="300" src="http://www.indeed.com/trendgraph/jobgraph.png?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" border="0" alt="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends graph">
+                            <img width="540" height="300" src="img/indeed-growth-jobgraph.png">
                         </a>
                     </div>
                     <aside class="notes">
@@ -1201,10 +1491,30 @@
                     </aside>
                 </section>
 
-                <!-- Section: Others Say Similar Things ============================ -->
+                <section>
+                  <h2>Indeed.com Query</h2>
+                  <small style="text-align:left;"><code>
+                      R
+                      !"R D" !"A R" !"H R" !"R N" !toys !kids !" R Walgreen" !walmart !"HVAC R" !"R Bard"<br/>
+                      and ( "biostatistics" or "data analysis" or "data analyst"
+                      or "epidemiologist"<br/>
+                      or "healthcare analysis" or "healthcare analyst"<br/>
+                      or "statistical"<br/>
+                      )<br/>
+                      ,SAS
+                      !"system administrator" !"school age" !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse<br/>
+                      and ( "biostatistics" or "data analysis" or "data analyst"
+                      or "epidemiologist"<br/>
+                      or "healthcare analysis" or "healthcare analyst"<br/>
+                      or "statistical"<br/>
+                      )
+                  </code></small>
+                </section>
+
+                <!-- Section: Everyone Writes About R ============================ -->
                 <section>
                     <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h2>Others Say Similar Things</h2>
+			            <h2>Everyone Writes About R</h2>
                     </div>
                     <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
                         <img src="svg/r.svg" height="75%" width="75%">
@@ -1216,6 +1526,108 @@
                     </aside>
 		        </section>
 
+                <section>
+                  <h2>Lots of Articles About . . . . R!</h2>
+                  <small>
+                    <table>
+                      <tr>
+                        <td width="33.3%">
+                          New York Times
+                        </td>
+                        <td width="33.3%">
+                          <a href="http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=0">
+                            Data Analysts Captivated by R's Power
+                          </a>
+                        </td>
+                        <td>
+                          January 6, 2009
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          New York Times
+                        </td>
+                        <td>
+                          <a href="http://bits.blogs.nytimes.com/2009/01/08/r-you-ready-for-r/">
+                            R You Ready For R?
+                          </a>
+                        </td>
+                        <td>
+                          January 8, 2009
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Fast Company
+                        </td>
+                        <td>
+                          <a href="http://www.fastcolabs.com/3030063/why-the-r-programming-language-is-good-for-business">
+                            Why The R Programming Language Is Good For Business
+                          </a>
+                        </td>
+                        <td>
+                          May 5, 2014
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Fast Company
+                        </td>
+                        <td>
+                          <a href="http://www.fastcolabs.com/3030716/the-9-best-languages-for-crunching-data">
+                            The 9 Best Programming Languages For Crunching
+                            Data
+                          </a>
+                        </td>
+                        <td>
+                          May 5, 2014
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Fast Company
+                        </td>
+                        <td>
+                          <a href="http://www.fastcocreate.com/1682905/where-data-and-creativity-meet-confessions-of-a-quant-madison-avenues-hitman">
+                            Where Data And Creativity Meet: Confessions Of
+                            A Quant, Madison Avenue's "Hitman".
+                          </a>
+                        </td>
+                        <td>
+                          ~ 2 Years Ago
+                        </td>
+                      </tr>
+                      <tr>
+                      <td>
+                        Revolution Analytics
+                      </td>
+                      <td>
+                        <a href="http://www.revolutionanalytics.com/r-is-still-hot">
+                          R Is Still Hot and Getting Hotter
+                        </a>
+                      </td>
+                      <td>
+                        January 14, 2015
+                      </td>
+                      </tr>
+                    </table>
+                  </small>
+                </section>
+
+                <!-- Section: Everyone Writes About R ============================ -->
+                <section>
+                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+			            <h1>Questions</h1>
+                    </div>
+                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+                        <img src="svg/r.svg" height="75%" width="75%">
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+		        </section>
 
 	        </div>
 

@@ -9,17 +9,17 @@ library(dplyr)
 library(ggplot2)
 library(knitr)
 library(rmarkdown)
+library(shiny)
 
 ## Presentation ----------------------------------------------------------------
-render("index.Rhtml", html_document())
+knit(input="index.Rhtml", output="index.html")
 
 ## Minimal Markdown: PDF -------------------------------------------------------
 render("vignettes/minimal-markdown.Rmd", pdf_document())
 
+## Minimal Markdown: Word ------------------------------------------------------
+render("vignettes/minimal-markdown.Rmd", word_document())
+
 ## Minimal Markdown: HTML ------------------------------------------------------
 render("vignettes/minimal-markdown.Rmd", html_document())
-
-## Minimal Shiny ---------------------------------------------------------------
-render("vignettes/minimal-shiny.Rmd", html_document())
-
 
