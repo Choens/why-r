@@ -1,61 +1,61 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-	    <meta charset="utf-8">
+  <head>
+	<meta charset="utf-8">
 
-	    <title>Why R</title>
+	<title>Why R</title>
 
-	    <meta name="description" content="A epistemological answer to the obvious question. Why would anyone want to use R?">
-	    <meta name="author" content="Andy Choens, MSW">
-	    <meta name="apple-mobile-web-app-capable" content="yes" />
-	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="description" content="A epistemological answer to the obvious question. Why would anyone want to use R?">
+	<meta name="author" content="Andy Choens, MSW">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-	    <link rel="stylesheet" href="css/reveal.css">
-	    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
-	    <!-- Code syntax highlighting -->
-	    <link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-	    <!-- Printing and PDF exports -->
-	    <script>
-	     var link = document.createElement( 'link' );
-	     link.rel = 'stylesheet';
-	     link.type = 'text/css';
-	     link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-	     document.getElementsByTagName( 'head' )[0].appendChild( link );
-	    </script>
+	<!-- Printing and PDF exports -->
+	<script>
+	  var link = document.createElement( 'link' );
+	  link.rel = 'stylesheet';
+	  link.type = 'text/css';
+	  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	  document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
 
-	    <!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-    </head>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+       </head>
 
-    <body>
+  <body>
 
-	    <div class="reveal">
+	<div class="reveal">
 
-	        <!-- Any section element inside this container is displayed as a slide -->
+	  <!-- Any section element inside this container is displayed as a slide -->
 
 
-	        <div class="slides">
+	  <div class="slides">
 
-                <!-- Title Slide ################################################### -->
-		        <section>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h1>Why</h1>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-                        <img src="svg/r.svg" height="75%" width="75%">
-			            <p>
-			                <small>Presented by: Andy Choens, MSW</small>
-			            </p>
-                    </div>
-                    <aside class="notes">
-                        <p>According
-                            to <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">Wikipedia</a>:</p>
-                        <code>
+        <!-- Title Slide ################################################### -->
+		<section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+			<h1>Why</h1>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+			<p>
+			  <small>Presented by: Andy Choens, MSW</small>
+			</p>
+          </div>
+          <aside class="notes">
+            <p>According
+              to <a href="https://en.wikipedia.org/wiki/R_%28programming_language%29">Wikipedia</a>:</p>
+            <code>
               R is a programming language and software environment for
               statistical computing and graphics. The R language is
               widely used among statisticians and data miners for
@@ -63,1436 +63,1683 @@
               analysis. Polls, surveys of data miners, and studies of
               scholarly literature databases show that R's popularity
               has increased substantially in recent years.
-                        </code>
-                        <p>
-                            This is not a WHY NOT SAS presentation. This is a Why R
-                            presentation. By the end of the presentation, I hope to
-                            have demonstrated that R is a relevant language in the
-                            work we are doing today and will be even more relevant
-                            in years to come.
-                        </p>
-                    </aside>
-		        </section>
+            </code>
+            <p>
+              This is not a WHY NOT SAS presentation. This is a Why R
+              presentation. By the end of the presentation, I hope to
+              have demonstrated that R is a relevant language in the
+              work we are doing today and will be even more relevant
+              in years to come.
+            </p>
+          </aside>
+		</section>
 
-                <!-- URLs to Remember -------------------------------------- -->
-                <section>
-                    <h2>URLs To Remember:</h2>
-                    <ol start=0>
-                        <li><a href="http://choens.github.io/why-r/">http://choens.github.io/why-r/</a></li>
-                        <li><a href="https://github.com/choens/why-r/">https://github.com/choens/why-r/</a></li>
-                        <li><a href="http://cran.r-project.org/">http://cran.r-project.org/</a></li>
-                    </ol>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                The 1st link will let you see the presentation, as
-                                it was presented here today.
-                            </li>
-                            <li>
-                                The 2nd link will let you see all of the underlying
-                                code used in today's presentation.
-                            </li>
-                            <li>
-                                Later in the presentation, I will show some demo
-                                output files and demo code files. These resources can be
-                                found in the examples folder on GitHub which you can
-                                access by following the 2nd link.
-                            </li>
-                            <li>
-                                You are free to use any of these materials. This
-                                presentation, slides, demo files, etc. are licensed
-                                under the XXXX license.
-                            </li>
-                            <li>
-                                Any time you see text in this color of
-                                blue. It is a link. If you click it,
-                                you will go somewhere fun.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- URLs to Remember -------------------------------------- -->
+        <section>
+          <h2>URLs To Remember:</h2>
+          <ol start=0>
+            <li><a href="http://choens.github.io/why-r/">http://choens.github.io/why-r/</a></li>
+            <li><a href="https://github.com/choens/why-r/">https://github.com/choens/why-r/</a></li>
+            <li><a href="http://cran.r-project.org/">http://cran.r-project.org/</a></li>
+          </ol>
+          <aside class="notes">
+            <ul>
+              <li>
+                The 1st link will let you see the presentation, as
+                it was presented here today.
+              </li>
+              <li>
+                The 2nd link will let you see all of the underlying
+                code used in today's presentation.
+              </li>
+              <li>
+                Later in the presentation, I will show some demo
+                output files and demo code files. These resources can
+                be found in the examples folder on GitHub which you
+                can access by following the 2nd link.
+              </li>
+              <li>
+                You are free to use any of these materials. This
+                presentation, slides, demo files, etc. are licensed
+                under a Creative Commons with Attribution license.
+              </li>
+              <li>
+                Any time you see text in this color of
+                blue. It is a link. If you click it,
+                you will go somewhere fun.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <!-- Bad Reasons to Learn / Use R ---------------------------------- -->
-                <section>
-                    <h2>Bad Reasons To Learn / Use R </h2>
-                    <br/>
-                    <div style=" display:inline-block; margin:0 auto; float:left; width:60%;">
-                        <ul>
-                            <li class="fragment" data-fragment-index="1">Some
-                                guy with a beard likes it.</li>
-                            <li class="fragment" data-fragment-index="2">Someone
-                                on the Internet said it was great.</li>
-                            <li class="fragment" data-fragment-index="3">You
-                                read about it somewhere.</li>
-                        </ul>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:40%;">
-                        <img src="svg/bad.svg" height="100%" width="100%">
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                            <li>Advance: 3x</li>
-                            <li>Let's get this out of the way. There are several bad reasons to use any tool.</li>
-                            <li>In the context of today's discussion, I came up with the following bad reasons to use R.</li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Bad Reasons to Learn / Use R ---------------------------------- -->
+        <section>
+          <h2>Bad Reasons To Learn / Use R </h2>
+          <br/>
+          <div style=" display:inline-block; margin:0 auto; float:left; width:60%;">
+            <ul>
+              <li class="fragment" data-fragment-index="1">
+                Some guy with a beard likes it.
+              </li>
+              <li class="fragment" data-fragment-index="2">
+                Someone on the Internet said it was
+                great.
+              </li>
+              <li class="fragment" data-fragment-index="3">
+                SAS isn't doing what you want it to. (Operator error?)
+              </li>
+            </ul>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:40%;">
+            <img src="svg/bad.svg" height="100%"
+                 width="100%" style="vertical-align:middle;">
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>
+                Let's get this out of the way. There are
+                several bad reasons to use any tool.
+              </li>
+              <li>
+                In the context of today's discussion, I came
+                up with the following bad reasons to use R.
+              </li>
+              <li>
+                Advance: 3x
+              </li>
+            </ul>
+          </aside>
+        </section>
+        
+        <!-- Good Reasons to Learn / Use R -------------------------------- -->
+        <section>
+          <h2>Good Reasons to Learn / Use R</h2>
+          <br/>
+          <div style="display:inline-block; margin:0 auto; float:left; width:40%;">
+            <img src="svg/good.svg" height="100%"
+                 width="100%" style="vertical-align:middle;">
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:60%;">
+            <ul>              
+              <li class="fragment">Ecosystem</li>
+              <li class="fragment">Literate Programming</li>
+              <li class="fragment">Open Source / Open Science</li>
+              <li class="fragment">Job Growth</li>
+              <li class="fragment">Everyone Writes About R</li>
+            </ul>
+          </div>
+          <aside class="notes">
+            <ul>              
+              <li>
+                Advance: The ecosystem of tools around R is nothing
+                short of AMAZING and it is getting more amazing every
+                single day, because ANYONE can contribute to the
+                ecosystem.
+              </li>
+              <li>
+                As of February 2, 2015: <a href="http://cran.r-project.org/web/packages/">CRAN</a>,
+                the primary R repository, contains 6,391
+                packages. These are peer reviewed packages, developed
+                by the community. <a href="http://www.bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor</a> contains
+                an additional 936 packages. Just let that sink in. And while you do:
+              </li>
+              <li>
+                I'd like to tell you about where you can use R. You
+                can use R from within SAS. You can use R from within
+                SPSS. You can use R from within MATLAB, Oracle,
+                Postgres, and Vertica. R skills are portable
+                skills. Microsoft recently bought the R-based
+                consulting firm Revolution Analytics, which could
+                result in better integration of R in Microsoft
+                produces such as SQL Server or even Office.
+              </li>  
+              <li>
+                Advance: This presentation isn't long enough to take a
+                deep dive into Literate Programming, but I do want to
+                mention this idea briefly.
+              </li>
+              <li>
+                Literate programming is an idea from the 1980s, to
+                interweave natural language and computer programming
+                language. I'll give you concrete examples of this
+                later, but the upshot is that it makes it possible to
+                write a program that is both self-documenting AND is
+                able to compile to a finished, publishable manuscript
+                or report. No more cutting and pasting for an hour. No
+                more messing up a table because you forgot a decimal
+                point on the 9th row of the 3rd column. A
+                self-documenting, transparent manuscript that can be
+                published.
+              </li>
+              <li>
+                This is an idea from the 80s. The book, Literate
+                Programming was published in 1984. This is an idea
+                that is very influential in the R community and is not
+                only considered to be current and cutting edge, it is
+                something that people are working on today to make it
+                easier and faster to produce.
+              </li>
+              <li>
+                Advance: One good reason to use R is because it is
+                open source. Those 7,000+ packages? Only possible
+                because R is open source and engages with the
+                community.
+              </li>
+              <li>
+                IBM is unlikely to make integrate SAS into SPSS. They
+                are competitors. Besides, owning SAS and SPSS on the
+                same machine without a student discount is
+                . . . prohibitively expensive. R is considered safe,
+                common ground, because it is not a commercial entity.
+              </li>
+              <li>
+                Advance: A perfectly reasonable, self-interested
+                reason to use any tool professionally is because you
+                think it will lead to future job opportunities.
+              </li>
+              <li>
+                Knowing how to use SAS effectively is a good way to
+                make yourself eligible for a large number of job
+                opportunities. Knowing how to use both
+                R <emphasis>and</emphasis> SAS effectively makes you
+                relevant to even more future job opportunities. Please
+                note: I said AND. Not or. Not instead of. I said AND.
+              </li>
+              <li>
+                Advance: But please. Don't take my word for it. See
+                what some of these people have to say.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <!-- Good Reasons to Learn / Use R -------------------------------- -->
-                <section>
-                    <h2>Good Reasons to Learn / Use R</h2>
-                    <br/>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:40%;">
-                        <img src="svg/good.svg" height="100%" width="100%">
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:60%;">
-                        <ul>              
-                            <li class="fragment">Ecosystem</li>
-                            <li class="fragment">Literate Programming</li>
-                            <li class="fragment">Open Source / Open Science</li>
-                            <li class="fragment">Future Opportunities</li>
-                            <li class="fragment">Everyone Writes About R</li>
-                        </ul>
-                    </div>
-                    <aside class="notes">
-                        <ul>              
-                            <li>
-                                Advance: The ecosystem of tools around R is nothing
-                                short of AMAZING and it is getting more amazing every
-                                single day, because ANYONE can contribute to the
-                                ecosystem.
-                            </li>
-                            <li>
-                                As of February 2, 2015: <a href="http://cran.r-project.org/web/packages/">CRAN</a>,
-                                the primary R repository, contains 6,391
-                                packages. These are peer reviewed packages, developed
-                                by the community. <a href="http://www.bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor</a> contains
-                                an additional 936 packages. Just let that sink in. And while you do:
-                            </li>
-                            <li>
-                                I'd like to tell you about where you can use R. You
-                                can use R from within SAS. You can use R from within
-                                SPSS. You can use R from within MATLAB, Oracle,
-                                Postgres, and Vertica. R skills are portable
-                                skills. Microsoft recently bought the R-based
-                                consulting firm Revolution Analytics, which could
-                                result in better integration of R in Microsoft
-                                produces such as SQL Server or even Office.
-                            </li>  
-                            <li>
-                                Advance: This presentation isn't long enough to take a
-                                deep dive into Literate Programming, but I do want to
-                                mention this idea briefly.
-                            </li>
-                            <li>
-                                Literate programming is an idea from the 1980s, to
-                                interweave natural language and computer programming
-                                language. I'll give you concrete examples of this
-                                later, but the upshot is that it makes it possible to
-                                write a program that is both self-documenting AND is
-                                able to compile to a finished, publishable manuscript
-                                or report. No more cutting and pasting for an hour. No
-                                more messing up a table because you forgot a decimal
-                                point on the 9th row of the 3rd column. A
-                                self-documenting, transparent manuscript that can be
-                                published.
-                            </li>
-                            <li>
-                                This is an idea from the 80s. The book, Literate
-                                Programming was published in 1984. This is an idea
-                                that is very influential in the R community and is not
-                                only considered to be current and cutting edge, it is
-                                something that people are working on today to make it
-                                easier and faster to produce.
-                            </li>
-                            <li>
-                                Advance: One good reason to use R is because it is
-                                open source. Those 7,000+ packages? Only possible
-                                because R is open source and engages with the
-                                community.
-                            </li>
-                            <li>
-                                IBM is unlikely to make integrate SAS into SPSS. They
-                                are competitors. Besides, owning SAS and SPSS on the
-                                same machine without a student discout is
-                                . . . prohibitively expensive. R is considered safe,
-                                common ground, because it is not a commercial entity.
-                            </li>
-                            <li>
-                                Advance: A perfectly reasonable, self-interested
-                                reason to use any tool professionally is because you
-                                think it will lead to future job opportunities.
-                            </li>
-                            <li>
-                                Knowing how to use SAS effectively is a good way to
-                                make yourself eligible for a large number of job
-                                opportunities. Knowing how to use both R <emphasis>and</emphasis>
-                                SAS effectively makes you relevant to even more future
-                                job opportunities. Please note: I said AND. Not
-                                or. Not instead of. I said AND.
-                            </li>
-                            <li>
-                                Advance: But please. Don't take my word for it. See
-                                what some of these people have to say.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Section: Ecosystem =========================================== -->
+		<section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+			<h1>Ecosystem</h1>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>
+                The R ecosystem is vast. Because anyone can alter it,
+                extend it or otherwise bend it to their will, they
+                have.
+              </li>
+              <li>
+                R is used for social science research, genetics,
+                econometrics and betting on Football (both types).
+              </li>
+              <li>
+                I'm going to give you a peek into this vast
+                ecosystem. But all I can't even begin to explain it
+                all. There's too much out there and quite frankly, I
+                don't understand half of it.
+              </li>
+              <li>
+                But don't worry. Neither will you.
+              </li>
+            </ul>
+          </aside>
+		</section>
 
-                <!-- Section: Ecosystem =========================================== -->
-		        <section>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h1>Ecosystem</h1>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-                        <img src="svg/r.svg" height="75%" width="75%">
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                The R ecosystem is vast. Because anyone can alter it,
-                                extend it or otherwise bend it to their will, they
-                                have.
-                            </li>
-                            <li>
-                                R is for social science research, genetics,
-                                econometrics and betting on Football (both types).
-                            </li>
-                            <li>
-                                I'm going to give you a peek into this vast
-                                ecosystem. But all I can't even begin to explain it
-                                all. There's too much out there and quite frankly, I
-                                don't understand half of it.
-                            </li>
-                            <li>
-                                But don't worry. Neither will you.
-                            </li>
-                        </ul>
-                    </aside>
-		        </section>
+        <!-- Packages ------------------------------------------------------ -->
+        <section>
+          <h2>Packages</h2>
+          <p style="text-align:left">
+            The capabilities of R are extended through
+            user-created packages, which allow specialized
+            statistical techniques, graphical devices (<a href="http://cran.r-project.org/web/packages/ggplot2/index.html">ggplot2</a>),
+            import/export capabilities, reporting tools
+            (<a href="http://cran.r-project.org/web/packages/knitr/index.html">knitr</a>, <a href="http://www.statistik.lmu.de/~leisch/Sweave/">Sweave</a>),
+            etc. These packages are developed primarily in
+            R, and sometimes in Java, C, C++ and Fortran.
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>
+                Anyone in this room can write and contribute a
+                package. Anyone in Albany can write and contribute a
+                package to the R ecosystem.
+              </li>
+              <li>
+                If others value it, it will be used. It will get
+                blogged about. Others will use it.
+              </li>
+              <li>
+                To contribute a package, or to R-Core, you don't have
+                to work in a specific office or have a specific title.
+              </li>
+              <li>
+                R packages are like extensions for Firefox or Apps for
+                Google Chrome. The take the base system and enhance
+                it. And if you have ever looked at the number of
+                extensions and apps for a web browser, it is
+                staggering. Now, imagine that same diversity in an
+                analytics package.
+              </li>
+              <li>
+                Now, stop imagining, because you can have it and it
+                won't cost you a dime.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <section>
-                    <h2>Packages</h2>
-                    <p style="text-align:left">
-                        The capabilities of R are extended through
-                        user-created packages, which allow specialized
-                        statistical techniques, graphical devices (<a href="http://cran.r-project.org/web/packages/ggplot2/index.html">ggplot2</a>),
-                        import/export capabilities, reporting tools
-                        (<a hre="http://cran.r-project.org/web/packages/knitr/index.html">knitr</a>, <a href="http://www.statistik.lmu.de/~leisch/Sweave/">Sweave</a>),
-                        etc. These packages are developed primarily in
-                        R, and sometimes in Java, C, C++ and Fortran.
-                    </p>
-                </section>
-                <section>
-                    <h2>Popular Package Places</h2>
-                    <ul>
-                        <li>
-                            <a href="http://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a>
-                        </li>
-                        <li>
-                            <a href="http://www.bioconductor.org/">Bioconductor</a>
-                        </li>
-                        <li>
-                            <a href="http://www.omegahat.org/">Omegahat</a>
-                        </li>
-                        <li>
-                            <a href="http://r-forge.r-project.org/">R-Forge</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/">GitHub</a>
-                        </li>
-                    </ul>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                CRAN: The official R
-                                repositories. Wide ranging collection
-                                of packages. The growth of packages on
-                                this repo alone is staggering, and
-                                only increasing.
-                            </li>
-                            <li>
-                                Bio: Provides packages for the
-                                analysis of genomic data. Bioconductor
-                                and R are the two repos I use the
-                                most. Packages here tend to be of very
-                                high quality, are updated, and well
-                                accepted by the broader
-                                community. There are over 7,000
-                                packages at these two sites alone.
-                            </li>
-                            <li>
-                                Omegahat: Older repo. Predates
-                                CRAN. Has more bleeding edge
-                                packages. For example, there is a
-                                package to integrate R and Firefox,
-                                allowing you to run R within a
-                                webpage. Some duplication with CRAN.
-                            </li>
-                            <li>
-                                R-Forge: Clone of the venerable Source
-                                Forge site. This page is mostly
-                                packages not yet approved for
-                                distribution via CRAN, or is the beta
-                                version of the next release. Use most
-                                of this at your own risk. Some very
-                                interesting packages.
-                            </li>
-                            <li>
-                                GH: OMG. There are over 20,000 public
-                                repositories on GitHub, which appear
-                                to be R source code. Some of these are
-                                packages developed by the author for
-                                personal use. Some are analyses. Some
-                                are for various classes. The diversity
-                                here is incredible. I have no idea how
-                                to count only those repos on GH that
-                                are packages. I looked around, and
-                                nobody else does either.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Popular Package Places ---------------------------------------- -->
+        <section>
+          <h2>Popular Package Places</h2>
+          <ul>
+            <li>
+              <a href="http://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a>
+            </li>
+            <li>
+              <a href="http://www.bioconductor.org/">Bioconductor</a>
+            </li>
+            <li>
+              <a href="http://www.omegahat.org/">Omegahat</a>
+            </li>
+            <li>
+              <a href="http://r-forge.r-project.org/">R-Forge</a>
+            </li>
+            <li>
+              <a href="https://github.com/">GitHub</a>
+            </li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>
+                CRAN: The official R repositories. Wide ranging
+                collection of packages. The growth of packages on this
+                repo alone is staggering, and only increasing.
+              </li>
+              <li>
+                Bio: Provides packages for the analysis of genomic
+                data. Bioconductor and R are the two repos I use the
+                most. Packages here tend to be of very high quality,
+                are updated, and well accepted by the broader
+                community. There are over 7,000 packages at these two
+                sites alone.
+              </li>
+              <li>
+                Omegahat: Older repo. Predates CRAN. Has more bleeding
+                edge packages. For example, there is a package to
+                integrate R and Firefox, allowing you to run R within
+                a webpage. Some duplication with CRAN.
+              </li>
+              <li>
+                R-Forge: Clone of the venerable Source Forge
+                site. This page is mostly packages not yet approved
+                for distribution via CRAN, or is the beta version of
+                the next release. Use most of this at your own
+                risk. Some very interesting packages.
+              </li>
+              <li>
+                GH: OMG. There are over 20,000 public repositories on
+                GitHub, which appear to be R source code. Some of
+                these are packages developed by the author for
+                personal use. Some are analyses. Some are for various
+                classes. The diversity here is incredible. I have no
+                idea how to count only those repos on GH that are
+                packages. I looked around, and nobody else does
+                either.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <!-- To Infinity and Beyond! ------------------------------- -->
-                <section>
-                    <h2>To Infinity & Beyond!</h2>
-                    <img src ="img/fig_8_cran.png" width="640" style="position: relative; top:-150px; z-index:-1;">
-                    <p style="position: relative; top:-175px; z-index:+1;">
-                        Source:
-                        <a href="http://r4stats.com/articles/popularity/">r4stats.com/articles/popularity/</a>
-                    </p>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                I want to plug the r4stats page, which is where I
-                                got a lot of the information I used in this
-                                presentation. The amount of information there is
-                                staggering and quite frankly somewhat obsessive.
-                            </li>
-                            <li>
-                                R-Core is a powerful stats package. But I don't use
-                                R because of the brilliance of R-Core. I use R
-                                because of the packages. 
-                            </li>
-                            <li>
-                                In 2009 John Fox wrote some code that calculates the
-                                number of R packages available on CRAN for each
-                                release of R. This image does not include
-                                Bioconductor or any other R package
-                                repositories. Just the official CRAN packages.
-                            </li>
-                            <li>
-                                For those keeping track at home, the super-imposed
-                                model is a quadratic parabola. More importantly is
-                                the continuing, rapid rise.
-                            </li>
-                            <li>
-                                This single image is quite possibly one of the best
-                                reasons to use R and one of the best reasons to run
-                                for the hills. With this many options available,
-                                there is duplication. Some packages are
-                                brilliant. Some are bizarre. Some are probably
-                                downright stupid. To leverage this incredible
-                                resource takes time and it takes expertise.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- To Infinity and Beyond! ------------------------------- -->
+        <section>
+          <h2>To Infinity & Beyond!</h2>
+          <img src ="img/fig_8_cran.png" width="640" style="position: relative; top:-150px; z-index:-1;">
+          <p style="position: relative; top:-175px; z-index:+1;">
+            Source:
+            <a href="http://r4stats.com/articles/popularity/">r4stats.com/articles/popularity/</a>
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>
+                I want to plug the r4stats page, which is where I got
+                a lot of the information I used in this
+                presentation. The amount of information there is
+                staggering and quite frankly somewhat obsessive.
+              </li>
+              <li>
+                R-Core is a powerful stats package. But I don't use R
+                because of the brilliance of R-Core. I use R because
+                of the packages.
+              </li>
+              <li>
+                In 2009 John Fox wrote some code that calculates the
+                number of R packages available on CRAN for each
+                release of R. This image does not include Bioconductor
+                or any other R package repositories. Just the official
+                CRAN packages.
+              </li>
+              <li>
+                For those keeping track at home, the super-imposed
+                model is a quadratic parabola. More importantly is the
+                continuing, rapid rise.
+              </li>
+              <li>
+                This single image is quite possibly one of the best
+                reasons to use R and one of the best reasons to run
+                for the hills. With this many options available, there
+                is duplication. Some packages are brilliant. Some are
+                bizarre. Some are probably downright stupid. To
+                leverage this incredible resource takes time and it
+                takes expertise.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <!-- Two Examples ------------------------------------------ -->
-                <section>
-                    <h2>Packages Examples</h2>
-                    <table style="width:100%;">
-                        <tr>
-                            <td style="width:33.3%; text-align:center;">
-                                <h3><a href="http://cran.r-project.org/web/packages/dplyr/index.html">dplyr</a></h3>                                
-                            </td>
-                            <td style="width:33.3%; text-align:center;">
-                                <h3><a href="http://cran.r-project.org/web/packages/ggplot2/index.html">ggplot2</a></h3>
-                            </td>
-                            <td style="width:33.3%; text-align:center;">
-                                <h3><a href="http://cran.r-project.org/web/packages/sqlutils/index.html">sqlutils</a></h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <small>A fast, consistent tool for
-                                working with data frame like objects,
-                                both in memory and out of memory.</small>
-                            </td>
-                            <td>
-                                <small>An implementation of the
-                                grammar of graphics in R. It combines
-                                the advantages of both base and
-                                lattice graphics: conditioning and
-                                shared axes are handled automatically,
-                                and you can still build up a plot step
-                                by step from multiple data sources. It
-                                also implements a sophisticated
-                                multidimensional conditioning system
-                                and a consistent interface to map data
-                                to aesthetic attributes.</small>
-                            </td>
-                            <td>
-                                <small>This package provides utilities
-                                for working with a library of SQL
-                                files.</small>
-                            </td>                            
-                        </tr>
-                    </table>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                I'm not even going to pretend like I know what some
-                                of these packages do. Yes. There is actually a
-                                package on CRAN dedicated to fisheries science. And,
-                                I genuinely have NO idea what the ChIPpeakAnno
-                                package does. But with over 7,000 packages, even a
-                                social worker like me is bound to find something
-                                useful.
-                            </li>
-                </section>
-                
-                <!-- Diverse Examples -------------------------------------- -->
-                <section>
-                  <h2>Package Craziness</h2>
-                    <table style="width:100%;">
-                        <tr>
-                            <td style="width:50%; text-align:center;">
-                                <h3><a href="http://cran.r-project.org/web/packages/kobe/index.html">kobe-package</a></h3>
-                            </td>
-                            <td style="width:50%; text-align:center;">
-                                <h3><a href="http://www.bioconductor.org/packages/release/bioc/html/ChIPpeakAnno.html">Ch IP peak Anno</a></h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <small>The tuna Regional Fisheries Management
-                                    Organisations (tRFMOs) use a common framework for
-                                    providing scintific advice, i.e. the Kobe II
-                                    Framework. This is based on maintaining fishing
-                                    mortal- ity below FMSY and stock biomass above
-                                    BMSY. This package provides methods for summarising
-                                    results from stock assessments and Management
-                                    Strategy Evaluations in the Kobe format.</small>
-                            </td>
-                            <td>
-                                <small>The package includes functions to retrieve
-                                    the sequences around the peak, obtain enriched Gene
-                                    Ontology (GO) terms, find the nearest gene, exon,
-                                    miRNA or custom features such as most conserved
-                                    elements and other transcription factor binding
-                                    sites supplied by users. Starting 2.0.5, new
-                                    functions have been added for finding the peaks with
-                                    bi-directional promoters with summary statistics
-                                    (peaksNearBDP), for summarizing the occurrence of
-                                    motifs in peaks (summarizePatternInPeaks) and for
-                                    adding other IDs to annotated peaks or enrichedGO
-                                    (addGeneIDs). This package leverages the biomaRt,
-                                    IRanges, Biostrings, BSgenome, GO.db, multtest and
-                                    stat packages.</small>
-                            </td>
-                        </tr>
-                    </table>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                I'm not even going to pretend like I know what some
-                                of these packages do. Yes. There is actually a
-                                package on CRAN dedicated to fisheries science. And,
-                                I genuinely have NO idea what the ChIPpeakAnno
-                                package does. But with over 7,000 packages, even a
-                                social worker like me is bound to find something
-                                useful.
-                            </li>
-                </section>
+        <!-- Package Examples ---------------------------------------------- -->
+        <section>
+          <h2>Packages Examples</h2>
+          <table style="width:100%;">
+            <tr>
+              <td style="width:33.3%; text-align:center;">
+                <h3><a href="http://cran.r-project.org/web/packages/dplyr/index.html">dplyr</a></h3>                                
+              </td>
+              <td style="width:33.3%; text-align:center;">
+                <h3><a href="http://cran.r-project.org/web/packages/ggplot2/index.html">ggplot2</a></h3>
+              </td>
+              <td style="width:33.3%; text-align:center;">
+                <h3><a href="http://cran.r-project.org/web/packages/sqlutils/index.html">sqlutils</a></h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <small>A fast, consistent tool for working with data
+                  frame like objects, both in memory and out of
+                  memory.</small>
+              </td>
+              <td>
+                <small>An implementation of the grammar of graphics in
+                  R. It combines the advantages of both base and
+                  lattice graphics: conditioning and shared axes are
+                  handled automatically, and you can still build up a
+                  plot step by step from multiple data sources. It
+                  also implements a sophisticated multidimensional
+                  conditioning system and a consistent interface to
+                  map data to aesthetic attributes.</small>
+              </td>
+              <td>
+                <small>This package provides utilities for working
+                  with a library of SQL files.</small>
+              </td>                            
+            </tr>
+          </table>
+          <aside class="notes">
+            <ul>
+              <li>
+                Describe the packages.
+              </li>
+            </ul>
+        </section>
+        
+        <!-- Package Craziness --------------------------------------------- -->
+        <section>
+          <h2>Package Craziness</h2>
+          <table style="width:100%;">
+            <tr>
+              <td style="width:50%; text-align:center;">
+                <h3><a href="http://cran.r-project.org/web/packages/kobe/index.html">kobe-package</a></h3>
+              </td>
+              <td style="width:50%; text-align:center;">
+                <h3><a href="http://www.bioconductor.org/packages/release/bioc/html/ChIPpeakAnno.html">Ch IP peak Anno</a></h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <small>The tuna Regional Fisheries Management
+                  Organisations (tRFMOs) use a common framework for
+                  providing scintific advice, i.e. the Kobe II
+                  Framework. This is based on maintaining fishing
+                  mortal- ity below FMSY and stock biomass above
+                  BMSY. This package provides methods for summarising
+                  results from stock assessments and Management
+                  Strategy Evaluations in the Kobe format.</small>
+              </td>
+              <td>
+                <small>The package includes functions to retrieve the
+                  sequences around the peak, obtain enriched Gene
+                  Ontology (GO) terms, find the nearest gene, exon,
+                  miRNA or custom features such as most conserved
+                  elements and other transcription factor binding
+                  sites supplied by users. Starting 2.0.5, new
+                  functions have been added for finding the peaks with
+                  bi-directional promoters with summary statistics
+                  (peaksNearBDP), for summarizing the occurrence of
+                  motifs in peaks (summarizePatternInPeaks) and for
+                  adding other IDs to annotated peaks or enrichedGO
+                  (addGeneIDs). This package leverages the biomaRt,
+                  IRanges, Biostrings, BSgenome, GO.db, multtest and
+                  stat packages.</small>
+              </td>
+            </tr>
+          </table>
+          <aside class="notes">
+            <ul>
+              <li>
+                I'm not even going to pretend like I know what some of
+                these packages do. Yes. There is actually a package on
+                CRAN dedicated to fisheries science. And, I genuinely
+                have NO idea what the ChIPpeakAnno package does. But
+                with over 7,000 packages, even a social worker like me
+                is bound to find something useful.
+              </li>
+            </ul>
+        </section>
 
-                <!-- Commercial Support ------------------------------------ -->
-                <section>
-                    <h2>Commercial Support</h2>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:33%;">
-                        <h3>Programming Languages</h3>
-                        <ul>
-                            <small>
-                                <li>C</li>
-                                <li>Java</li>
-                                <li>JMP</li>
-                                <li>Mathematica</li>
-                                <li>MATLAB</li>
-                                <li>Python</li>
-                                <li>SAS</li>
-                                <li>SPSS</li>
-                                <li>Statistica</li>
-                                <li>tableau</li>
-                            </small>
-                        </ul>
-                    </div>
+        <!-- Commercial Support ------------------------------------ -->
+        <section>
+          <h2>Commercial Support</h2>
+          <div style="display:inline-block; margin:0 auto; float:left; width:33%;">
+            <h3>Programming Languages</h3>
+            <ul>
+              <small>
+                <li>C</li>
+                <li>Java</li>
+                <li>JMP</li>
+                <li>Mathematica</li>
+                <li>MATLAB</li>
+                <li>Python</li>
+                <li>SAS</li>
+                <li>SPSS</li>
+                <li>Statistica</li>
+                <li>tableau</li>
+              </small>
+            </ul>
+          </div>
 
-                    <div style="display:inline-block; margin:0 auto; width:33%;">
-                        <h3>Database <br/> Vendors</h3>
-                        <ul>
-                            <small>
-                                <li>Hadoop</li>
-                                <li>Oracle</li>
-                                <li>PostgreSQL</li>
-                                <li>Vertica</li>
-                            </small>
-                        </ul>            
-                    </div>
+          <div style="display:inline-block; margin:0 auto; width:33%;">
+            <h3>Database <br/> Vendors</h3>
+            <ul>
+              <small>
+                <li>Hadoop</li>
+                <li>Oracle</li>
+                <li>PostgreSQL</li>
+                <li>Vertica</li>
+              </small>
+            </ul>            
+          </div>
 
-                    <div style="display:inline-block; margin:0 auto; float:right; width:33%;">
-                        <h3>Business Intelligence</h3>
-                        <ul>
-                            <small>
-                                <li>Alteryx</li>
-                                <li>Jaspersoft</li>
-                                <li>Oracle Business Intelligence Enterprise Edition</li>
-                                <li>Pentaho</li>
-                                <li>SAP (and SAP HANA)</li>
-                            </small>
-                        </ul>                        
-                    </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:33%;">
+            <h3>Business Intelligence</h3>
+            <ul>
+              <small>
+                <li>Alteryx</li>
+                <li>Jaspersoft</li>
+                <li>Oracle Business Intelligence Enterprise Edition</li>
+                <li>Pentaho</li>
+                <li>SAP (and SAP HANA)</li>
+              </small>
+            </ul>                        
+          </div>
 
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                R bills itself as the lingua franca of
-                                statistics. This is done for several
-                                reasons.
-                            </li>
-                            <li>
-                                It is fun to say lingua franca. Admit
-                                it. You're rolling your eyes, but you
-                                know I'm right.
-                            </li>
-                            <li>
-                                More importantly, providers of
-                                commercial products nearly universally
-                                support it. You can use R from within
-                                SAS, SPSS, Oracle and Vertica. In
-                                fact, it is actually difficult to find
-                                a statistics package, database or
-                                business intelligence tool that
-                                doesn't support R.
-                            </li>
-                            <li>
-                                That means R skills are portable. Even
-                                in an office that uses SPSS, it is
-                                possible to leverage R skills. If you
-                                later move to a job that uses SAS,
-                                your SPSS skills aren't very
-                                useful. Your R skills . . . are. Sorry
-                                for the pun. But I meant to do it.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+          <aside class="notes">
+            <ul>
+              <li>
+                R bills itself as the lingua franca of
+                statistics. This is done for several reasons.
+              </li>
+              <li>
+                It is fun to say lingua franca. Admit it. You're
+                rolling your eyes, but you know I'm right.
+              </li>
+              <li>
+                More importantly, providers of commercial products
+                agree. You can use R from within SAS, SPSS, Oracle and
+                Vertica. In fact, it is actually difficult to find a
+                statistics package, database or business intelligence
+                tool that doesn't support R.
+              </li>
+              <li>
+                That means R skills are portable. Even in an office
+                that uses SPSS, it is possible to leverage R
+                skills. If you later move to a job that uses SAS, your
+                SPSS skills aren't very useful. Your R skills
+                . . . are. Sorry for the pun. But I meant to do it.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <!-- Interface Choices -------------------------------------------- -->
-                <section>
-                    <h2>Interface Choices</h2>
-                    <img src="img/screenshots/RStudio.png" style="position: relative; top:-50px; left:-50px; z-index:0;">
-                    <img src="img/screenshots/ESS.png" style="position: relative; top:-512px; left:0; z-index:1;">
-                    <img src="img/screenshots/Eclipse.png" style="position: relative; top:-974px; left:50px; z-index:2;">
-                    <img src="img/screenshots/Rkward.png" style="position: relative; top:-1425px; left:100px; z-index:2;">
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                Most commercial statistics packages
-                                come with a default interface of
-                                questionable quality. And if you don't
-                                like it . . . you can get over
-                                it. There probably aren't very many
-                                alternative choices.
-                            </li>
-                            <li>
-                                R is different. In truth, the default
-                                R interface makes the SAS interface
-                                look positively utopic. But, because R
-                                is open source and is the lingua
-                                franca of the statistics community,
-                                there are more interfaces available
-                                for R than you have time to experiment
-                                with. And more are coming out every
-                                day.
-                            </li>
-                            <li>
-                                I apologize for the color theme shown
-                                in all of the screenshots. I like
-                                it. It is called Solarized and is
-                                available in most pro-grade
-                                programming environments these days. I
-                                tend to use it anywhere / everywhere I
-                                can. Makes my eyes hurt less. All
-                                screenshots are taken from one of my
-                                laptops, and show a section of code I
-                                wrote in R and Emacs org-mode to
-                                assess a Kaggle data set about the
-                                Titanic disaster.
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Interface Choices -------------------------------------------- -->
+        <section>
+          <h2>Interface Choices</h2>
+          <img src="img/screenshots/RStudio.png" style="position: relative; top:-50px; left:-50px; z-index:0;">
+          <img src="img/screenshots/ESS.png" style="position: relative; top:-512px; left:0; z-index:1;">
+          <img src="img/screenshots/Eclipse.png" style="position: relative; top:-974px; left:50px; z-index:2;">
+          <img src="img/screenshots/Rkward.png" style="position: relative; top:-1425px; left:100px; z-index:2;">
+          <aside class="notes">
+            <ul>
+              <li>
+                Most commercial statistics packages come with a
+                default interface of questionable quality. And if you
+                don't like it . . . you can get over it. There
+                probably aren't very many alternative choices.
+              </li>
+              <li>
+                R is different. In truth, the default R interface
+                makes the SAS interface look positively utopic. But,
+                because R is open source and is the lingua franca of
+                the statistics community, there are more interfaces
+                available for R than you have time to experiment
+                with. And more are coming out every day.
+              </li>
+              <li>
+                I apologize for the color theme shown in all of the
+                screenshots. I like it. It is called Solarized and is
+                available in most pro-grade programming environments
+                these days. I tend to use it anywhere / everywhere I
+                can. Makes my eyes hurt less. All screenshots are
+                taken from one of my laptops, and show a section of
+                code I wrote in R and Emacs org-mode to assess a
+                Kaggle data set about the Titanic disaster.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <section>
-                    <h2>Interface - RStudio</h2>
-                    <a href="img/screenshots/RStudio.png">
-                      <img src="img/screenshots/RStudio.png" width="100%">
-                    </a>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                RStudio is becoming THE interface for
-                                R. It presents the user with an
-                                interface roughly modeled after
-                                matlab. It is easy to use, available
-                                on Windows, Mac and Linux and has an
-                                active user base. This the interface I
-                                recommend to people if they don't
-                                otherwise have an opinion.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Interface - RStudio ------------------------------------------- -->
+        <section>
+          <h2>Interface - RStudio</h2>
+          <a href="img/screenshots/RStudio.png">
+            <img src="img/screenshots/RStudio.png" width="100%">
+          </a>
+          <aside class="notes">
+            <ul>
+              <li>
+                RStudio is becoming THE interface for R. It presents
+                the user with an interface roughly modeled after
+                Matlab. It is easy to use, available on Windows, Mac
+                and Linux and has an active user base. This the
+                interface I recommend to people if they don't
+                otherwise have an opinion.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <section>
-                    <h2>Interface - EMACS / ESS</h2>
-                    <a href="img/screenshots/ESS.png">
-                      <img src="img/screenshots/ESS.png" width="100%">
-                    </a>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                ESS - Emacs Speaks Statistics. This is
-                                as bare bones as it gets. RStudio is
-                                an IDE. This is a text editor. In
-                                truth. It is THE text editor. All
-                                others are just playing catch-up. Fans
-                                of other text editors are welcome to
-                                email me to try to convince me
-                                otherwise.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Interface - EMACS / ESS --------------------------------------- -->
+        <section>
+          <h2>Interface - EMACS / ESS</h2>
+          <a href="img/screenshots/ESS.png">
+            <img src="img/screenshots/ESS.png" width="100%">
+          </a>
+          <aside class="notes">
+            <ul>
+              <li>
+                ESS - Emacs Speaks Statistics. This is as bare bones
+                as it gets. RStudio is an IDE. This is a text
+                editor. In truth. It is THE text editor. All others
+                are just playing catch-up. Fans of other text editors
+                are welcome to email me to try to convince me
+                otherwise.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <section>
-                    <h2>Interface - Eclipse/Statet</h2>
-                    <a href="img/screenshots/Eclipse.png">
-                      <img src="img/screenshots/Eclipse.png" width="100%">
-                    </a>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                Eclipse is a popular open-source Java
-                                IDE that is used by Java developers
-                                here at DOH. The plugin for R is
-                                called Statet. Eclipse has plugins
-                                that allow it to connect to databases
-                                such as Oracle and Vertica, write Java
-                                / C applications, program in R, SAS,
-                                etc.
-                            </li>
-                            <li>
-                                If all you want is an interface for R,
-                                you are probably better off with
-                                RStudio. If you want a high-quality
-                                interface to nearly everything. Use
-                                Emacs or Eclipse.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Interface - Eclipse / Statet ---------------------------------- -->
+        <section>
+          <h2>Interface - Eclipse / Statet</h2>
+          <a href="img/screenshots/Eclipse.png">
+            <img src="img/screenshots/Eclipse.png" width="100%">
+          </a>
+          <aside class="notes">
+            <ul>
+              <li>
+                Eclipse is a popular open-source Java IDE that is used
+                by Java developers here at DOH. The plugin for R is
+                called Statet. Eclipse has plugins that allow it to
+                connect to databases such as Oracle and Vertica, write
+                Java / C applications, program in R, SAS, etc.
+              </li>
+              <li>
+                If all you want is an interface for R, you are
+                probably better off with RStudio. If you want a
+                high-quality interface to nearly everything. Use Emacs
+                or Eclipse.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <section>
-                    <h2>Interface - JASP</h2>
-                    <a href="img/screenshots/JASP.png">
-                      <img src="img/screenshots/JASP.png" width="100%">
-                    </a>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                              I should note, I learned about this
-                              project only two days ago. If you
-                              download or experiment with this
-                              application, it may eat your computer.
-                            </li>
-                            <li>
-                              That said, this is an interesting effort
-                              to take an interface, SPSS, familiar to
-                              many social sciences students, and
-                              reimplement a similar interface that
-                              generates R syntax, rather than SPSS
-                              syntax.
-                            </li>
-                            <li>
-                              Will this succeed? I have no idea. But,
-                              it gives you an idea of how R is seen as
-                              the go-to language, the lingua franca,
-                              of statistics.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+        <!-- Interface - JASP ---------------------------------------------- -->
+        <section>
+          <h2>Interface - JASP</h2>
+          <a href="img/screenshots/JASP.png">
+            <img src="img/screenshots/JASP.png" width="100%">
+          </a>
+          <aside class="notes">
+            <ul>
+              <li>
+                I saw this project only two days ago. If you download
+                or experiment with this application, it may eat your
+                computer.
+              </li>
+              <li>
+                That said, this is an interesting effort to take an
+                interface, SPSS, familiar to many social sciences
+                students, and re-implement a similar interface that
+                generates R syntax, rather than SPSS syntax.
+              </li>
+              <li>
+                Will this succeed? I have no idea. But, it gives you
+                an idea of how R is seen as the go-to language, the
+                lingua franca, of statistics.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <section>
-                  <h2>SHINY</h2>
-                  <a href="img/screenshots/shiny.png">
-                    <img src="img/screenshots/shiny.png" width="100%">
+        <!-- Interface - Custom Dashboard ---------------------------------- -->
+        <section>
+          <h2>Interface - Custom Dashboard</h2>
+          <a href="img/screenshots/shiny.png">
+            <img src="img/screenshots/shiny.png" width="100%">
+          </a>
+          <aside class="notes">
+            <ul>
+              <li>
+                But what if you want to deploy a custom
+                interface? An interface to help an end-user
+                understand a specific idea? What if you don't
+                want to separate your code from your
+                presentation?
+              </li>
+              <li>
+                SHINY is here to help. This is an extension to
+                R that allows you to build dashboards and
+                complex analytic websites in R. We will
+                explore this particular dashboard in more
+                detail shortly.
+              </li>
+              <li>
+                If you want a modern, powerful interface, for
+                programming, interactive research or
+                presentation, R has an option that at the very
+                least rivals anything else on the market.
+              </li>
+              <li>
+                Total cost for the software seen in this
+                presentation? Nothing. At its best, science is
+                a meritocracy. R, and the dynamic ecosystem
+                around it epitomizes this meritocratic spirit.
+              </li>
+            </ul>
+          </aside>
+        </section>
+        
+
+        <!-- Literate Programming ------------------------------------------ -->
+		<section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+			<h2>Literate Programming</h2>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>
+                From Wikipedia: The literate programming paradigm, as
+                conceived by Knuth, represents a move away from
+                writing programs in the manner and order imposed by
+                the computer, and instead enables programmers to
+                develop programs in the order demanded by the logic
+                and flow of their thoughts. Literate programs are
+                written as an uninterrupted exposition of logic in an
+                ordinary human language, much like the text of an
+                essay, in which macros are included to hide
+                abstractions and traditional source code.
+              </li>
+              <li>
+                In other words . . . stop writing reports and papers
+                by running an analysis and then cutting and pasting
+                the results into Word. This is an approach to science
+                that combines the writing and the programming as a
+                single, cohesive piece.
+              </li>
+              <li>
+                Literate Programming is a vast topic and is worthy of
+                multiple presentations in its own right. Donald
+                Knuth's ideas have had a deep impact on how I prefer
+                to approach science. For the next few minutes, I would
+                like to show you some simple examples of what literate
+                programming means, to me.
+              </li>
+              <li>
+                At this point, it is worth pointing out, this
+                presentation is an example of literate programming. In
+                the following slides, we will look at some data, and
+                pictures. I didn't cut and paste this information into
+                this slide show. I embedded it into the slide
+                show. Let me show you what I mean. But, to do that, I
+                need a data set.
+              </li>
+            </ul>
+          </aside>
+		</section>
+
+        <!-- MTCARS -------------------------------------------------------- -->
+        <section>
+          <h2>MTCARS</h2>
+          <p style="text-align:left;">
+            The data was extracted from the 1974 Motor Trend US
+            magazine, and comprises fuel consumption and 10 aspects of
+            automobile design and performance for 32 automobiles (1973
+            - 1974 models).
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>
+                The MTCARS data set is commonly used in R examples when doing
+                linear regressions. Since it works for everyone else, I
+                decided to do it too.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- MTCARS - Just A Glimpse --------------------------------------- -->
+        <section>
+          <h2>MTCARS - Just A Glimpse</h2>
+
+          <small>
+            <!--begin.rcode
+            data(mtcars)
+            kable(head(mtcars))
+            end.rcode-->
+          </small>
+          <p>Source: <a href="http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html</a>
+            
+            <aside class="notes">
+              <ul>
+                <li>
+                  This is the first 10 lines of the
+                  mtcars data set.
+                </li>
+                <li>
+                  We are going to focus on the mpg, cyl, and
+                  disp columns.
+                </li>
+                <li>
+                  Here, I am displaying the code used to
+                  produce the tabular display. As we will
+                  see, I don't have to do that. Sometimes it
+                  is beneficial to do so. Usually it is not.
+                </li>
+                <li>
+                  mpg 	Miles/(US) gallon
+                </li>
+                <li>
+                  cyl 	Number of cylinders
+                </li>
+                <li>
+                  disp 	Displacement (cu.in.)
+                </li>
+                <li>
+                  hp 	Gross horsepower
+                </li>
+                <li>
+                  drat 	Rear axle ratio
+                </li>
+                <li>
+                  wt 	Weight (lb/1000)
+                </li>
+                <li>
+                  qsec 	1/4 mile time
+                </li>
+                <li>
+                  vs 	V/S
+                </li>
+                <li>
+                  am 	Transmission (0 = automatic, 1 =
+                  manual)
+                </li>
+                <li>
+                  gear 	Number of forward gears
+                </li>
+                <li>
+                  carb 	Number of carburetors
+                </li>
+              </ul>
+            </aside>
+        </section>
+
+        <!-- R Markdown ---------------------------------------------------- -->
+        <section>
+          <h2> R Markdown</h2>
+          <small style="text-align:left;">
+            <code style="text-align:left;">
+              ---<br/>
+              title: Minimal Markdown Example<br/>
+              author: Andy Choens, MSW<br/>
+              ---<br/>
+              <br/>
+              This is a simple, minimal example of report written in R markdown. The
+              purpose of this report is two fold:<br/>
+              <br/>
+              1. To enlighten you about the relationship between engine displacement
+              and gas mileage.<br/>
+              2. Provide an accessible introduction to Literate Programming.<br/>
+              <br/>
+              The source of the data is the 1974 Motor Trend USA Magazine.<br/>
+              <br/>
+              ```{r echo=FALSE}<br/>
+              <br/>
+              ## Init R and Config<br/>
+              library(ggplot2)<br/>
+              data(mtcars)<br/>
+              <br/>
+              ```<br/>
+            </code>
+          </small>
+          <aside class="notes">
+            <ul>
+              <li>
+                You can build a literate programming in HTML,
+                Word, LaTeX, etc. And all of those languages
+                and tools have their place. But right now I
+                want to focus on something called R Markdown.
+              </li>
+              <li>
+                Walk through the parts of the document.
+              </li>
+              <li>
+                95 lines of text and programming.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Insert A Graph ------------------------------------------------ -->
+        <section>
+          <h2>Insert a Graph</h2>
+          <small style="text-align:left;">
+            <code>
+              # Scatterplot<br/>
+              <br/>
+              Displacement is the independent variable. Gas mileage is the dependent
+              variable. Correlation does not imply causation, except for this time
+              when it does.<br/>
+              <br/>
+              ```{r echo=FALSE}<br/>
+              <br/>
+              ggplot(data = mtcars, aes(x=disp, y=mpg)) + geom_point(shape=1) + geom_smooth(method=lm)<br/>
+              <br/>
+              ```<br/>
+            </code>
+          </small>
+        </section>
+
+        <!-- Transparent, Reproducible ------------------------------------- -->
+        <section>
+          <h2>Transparent, Reproducible</h2>
+          <ul>
+            <li>
+              <a href="vignettes/minimal-markdown.Rmd">Code</a>
+            </li>
+            <li>
+              <a href="vignettes/minimal-markdown.pdf">PDF: <small><code>render("vignettes/minimal-markdown.Rmd", pdf_document())</code></small></a>
+            </li>
+            <li>
+              <a href="vignettes/minimal-markdown.docx">Word: <small><code>render("vignettes/minimal-markdown.Rmd", word_document())</code></small></a>
+            </li>
+            <li>
+              <a href="vignettes/minimal-markdown.html">HTML: <small><code>render("vignettes/minimal-markdown.Rmd", html_document())</code></small></a>
+            </li>
+            <aside class="notes">
+              <ul>
+                <li>
+                  How many of you have written a report, only to
+                  discover you made an error when cutting and pasting
+                  your results into Word? Literate programming removes
+                  errors due to cutting and pasting. The output is
+                  transparent and reproducible.
+                </li>
+                <li>
+                  It is transparent, because you can look at
+                  the data and look at the code and know where
+                  the numbers come from. It is reproducible,
+                  because I will get the exact same results
+                  EVERY time I run this "report".
+                </li>
+                <li>
+                  And if you give me a new data set (formatted
+                  the same way), I can spit out a new, equally
+                  accurate report in seconds. You cannot make
+                  these claims when you assemble a report by hand.
+                </li>
+                <li>
+                  Science should be reproducible and verifiable. 
+                </li>
+                <li>
+                  Alaska Project Example: Trying to reproduce another
+                  analyst's work.
+                </li>
+              </ul>
+            </aside>
+        </section>
+
+        <!-- The Return of SHINY ------------------------------------------- -->
+        <section>
+          <h2>The Return of SHINY</h2>
+          <a href="http://choens.shinyapps.io/why-r-shiny">
+            <img src="img/screenshots/shiny.png" width="100%">
+          </a>
+          <aside class="notes">
+            <ul>
+              <li>
+                R SHINY, the customizable interface for R is
+                another, more complex form of literate programming.
+              </li>
+              <li>
+                In this case, it is interactive.
+              </li>
+              <li>
+                And that is awesome.
+              </li>
+              <li>
+                Demo
+              </li>
+            </ul>
+          </aside>
+        </section>
+        
+        <!-- Section: Open Source / Open Science =========================== -->
+		<section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+			<h2>Open Source /<br/> Open Science</h2>
+            <h3>Free as in freedom, not beer.</h3>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>
+                The term open source often seems to have a negative
+                connotation in people's minds. That is unfortunate,
+                because it is everywhere. The Internet, your cell
+                phone, SAS. None of this would work without open
+                source. I want to dispel some myths and show you that
+                R's greatest strength is the open source license.
+              </li>
+              <li>
+                In fact, R, without the open source license would be
+                just another failed stats package. I'm standing here
+                talking about R, the open source implementation of
+                S. I doubt any of us will ever use S and nobody here
+                cares. S doesn't matter. There is no community. There
+                is no vibrant ecosystem. R matters, and it is the
+                license that makes it different and better than its
+                predecessor.
+              </li>
+              <li>
+                People interpret Open Source to mean 'free'.
+              </li>
+              <li>
+                But it means much more than that. Open Source, is an
+                ideological method for the development, distribution
+                and use of software.
+              </li>
+              <li>
+                The ecosystem, the integration with other tools, the
+                veritable multitude of user interface options
+                available for R. . . .
+              </li>
+              <li>
+                All of this is made possible by the ideological
+                choices made by the R-Core team who lead the
+                development of R.
+              </li>
+              <li>
+                Science isn't about getting into a journal. Science is
+                about understanding. Science is about
+                collaborating. Darwin didn't pull evolution clean out
+                of the sky. Evolution was part of a larger zeitgeist.
+              </li>
+              <li>
+                In Darwin's day, journals were where that conversation
+                happened.
+              </li>
+              <li>
+                Today, the conversation is about data. The discovery
+                of the Higgs Boson? Data driven. And you can download
+                the code they used to do it. Obama Care? Data
+                driven.
+              </li>
+              <li>
+                In order to have a data driven conversation, we have
+                to have a common language. Tools like R and Python are
+                that common language, not because they are
+                fundamentally better, but they are fundamentally
+                available to anyone. With these tools, code, the true
+                lingua franca of modern science, can be understood and
+                used by anyone. From Mozambique to Albany, NY.
+              </li>
+              <li>
+                R isn't competing with SAS and SPSS because it is a
+                beautiful language. It isn't. It is competing with
+                them because of the side affects of the decision to
+                develop R in an open, inclusive and transparent
+                manner. Transparency, and a tradition of sharing code
+                results in better science.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Open Source Is Everywhere ------------------------------------- -->
+        <section>
+          <h2>Open Source Is Everywhere:</h2>
+          <table>
+            <tr>
+              <td><h3>FOSS:</h3></td>
+              <td>
+                <img src="img/logos/firefox.jpg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="img/logos/adium.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="img/logos/java.png" height="128px" width="128px"
+                     style="vertical-align:middle;">
+              </td>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></td>
+              <td style="text-align:center;"><a href="https://www.adium.im/">Adium</a></td>
+              <td style="text-align:center;"><a href="https://www.java.com/en/download/">Java</a></td>
+            </tr>
+            <tr>
+              <td><h3>Based On:</h3></td>
+              <td>
+                <img src="img/logos/chrome.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="img/logos/safari.jpg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td>
+                <img src="img/logos/android.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="http://www.google.com/chrome/">Chrome</a></td>
+              <td style="text-align:center;"><a href="https://www.apple.com/safari/">Safari</a></td>
+              <td style="text-align:center;"><a href="https://www.android.com/">Android</a></td>
+            </tr>
+            <tr>
+            </tr>
+          </table>
+          <aside class="notes">
+            <ul>
+              <li>
+                I want you to get one thing straight. Open Source
+                isn't other. It is right in front of you. Have you
+                used the Internet? Congrats. You are a user of open
+                source. From databases to web-servers, open source
+                powers the Internet. Not proprietary tools. This isn't
+                other, it is mainstream.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Even @ DOH ---------------------------------------------------- -->
+        <section>
+          <h2>Even @ DOH:</h2>
+          <table>
+            <tr>
+              <td><h3>FOSS:</h3></td>
+              <td style="text-align:center;">
+                <img src="img/logos/filezilla.png"
+                     height="128px" width="128px" style="vertical-align:middle;">
+              </td>
+              <td style="text-align:center;">
+                <img src="img/logos/workbench.png" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td style="text-align:center;">
+                <img src="img/logos/7-zip.jpg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="https://filezilla-project.org/">Filezilla</a></td>
+              <td style="text-align:center;"><a href="http://www.sql-workbench.net/">SQL Workbench/J</a></td>
+              <td style="text-align:center;"><a href="http://www.7-zip.org/">7-Zip</a></td>
+            </tr>
+            <tr>
+              <td><h3>Based On:</h3></td>
+              <td style="text-align:center;">
+                <img src="img/logos/hp-vertica.jpeg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td style="text-align:center;"> 
+                <img src="img/logos/SAS.jpg" height="128px"
+                     width="128px" style="vertical-align:middle;">
+              </td>
+              <td style="text-align:center;">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:center;"><a href="http://www.vertica.com/">Vertica</a></td>
+              <td style="text-align:center;"><a href="http://www.sas.com/en_us/home.html">SAS</a></td>
+              <td></td>
+            </tr>
+            <tr>
+            </tr>
+          </table>
+          <aside class="notes">
+            <ul>
+              <li>
+                Surprise, many of the tools you use every day are
+                either open source or are based, at least in part, on
+                open source software.
+              </li>
+              <li>
+                Discuss SAS / Vertica.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Why? ---------------------------------------------------------- -->
+        <section>
+          <h1>Why?</h1>
+          <aside class="notes"></aside>
+        </section>
+
+        <!-- The Four Freedoms -------------------------------------------- -->
+        <section>
+          <h2> The Four Freedoms</h2>
+          <ol start ="0">
+            <li>
+              The freedom to run the program for any purpose.
+            </li>
+            <li>
+              The freedom to study how the program works, and change
+              it to make it do what you wish.
+            </li>
+            <li>
+              The freedom to redistribute copies so you can help your
+              neighbor.
+            </li>
+            <li>
+              The freedom to improve the program, and release your
+              improvements (and modified versions in general) to the
+              public, so that the whole community benefits.
+            </li>
+          </ol>
+          <br/>
+          <img src="img/logos/fsf.org.png">
+          <aside class="notes">
+            <ul>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Free_software">Wikipedia</a>,
+                lists the four freedoms associated with Free Software,
+                as defined by the Free Software Foundation as:
+              </li>
+              <li>
+                Richard Stallman wrote these, thinking about
+                software. But, at the time her was working at the AI
+                lab at MIT, so science is not an unknown idea to him.
+              </li>
+              <li>
+                I believe these four freedoms fit in well with the
+                scientific process. Replace the word
+                program with analysis. And re-read it.
+              </li>
+              <li>
+                I just defined open science. A form of verifiable,
+                transparent science that uses code as the common core
+                language that can be used, modified, and critiqued by
+                anyone.
+              </li>
+              <li>
+                To the extent that science today is driven by data,
+                the language of science must be code. We are all
+                computer programmers because we are scientists and
+                code is our common language.
+              </li>
+              <li>
+                Therefore we should use a language, a code, that is
+                available to anyone. Because science is about
+                understanding and that fundamentally requires
+                communications and collaboration.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Real: Code, Science, People ----------------------------------- -->
+        <section>
+          <h2>Real: Code, Science, People</h2>
+          <img src="img/logos/nightscout.png">
+          <h3>This ain't Fishy Science</h3>
+          <aside class="notes">
+            <ul>
+              <li>
+                Now it gets personal.
+              </li>
+              <li>
+                My wife is a Type 1 Diabetic. Managing diabetes is a
+                full time job. Tools such as the Dexcom Continuous
+                Glucose Monitor (CGM) are nothing short of
+                revolutionary. This is device she wears, which can
+                estimate her blood glucose level every 5 minutes.
+              </li>
+              <li>
+                Before this, she could only know her blood glucose
+                level when she manually tested her blood by pricking
+                her finger. Obviously, she can't do this every 5
+                minutes. She wouldn't have any fingers left.
+              </li>
+              <li>
+                The Nighscout project is a open source data system
+                that reads the data from the CGM and uploads it to a
+                Mongo database, making the data accessible to anyone
+                in the world. For parents of Type 1 children, this is
+                revolutionary. Equally revolutionary, Type 1 diabetics
+                can contribute their CGM readings to a centralized
+                database. This is the single largest repository of CGM
+                data in the world.
+              </li>
+              <li>
+                But this data has a problem. Nobody has a good way to
+                use it, to manage it, to analyze it. Yet. By the end
+                of the year, there will be a package for R called
+                Nightscout. It will be able to interface with a user's
+                private data AND the central data warehouse. It will
+                be able to return key statistics, such as an estimated
+                A1C score, which is a key process measure for the
+                management of diabetes.
+              </li>
+              <li>
+                I know this, because I'm going to write it. Any
+                doctor, or researcher will be able to use this package
+                to download data from the Nightscout project,
+                structure it and return some basic analyses of the
+                data. Anyone studying diabetes will be able to take
+                advantage of this technology. This is open
+                science. Completely transparent. Completely
+                reproducible. By anyone on earth.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Open Data or Open Science? ------------------------------------ -->
+        <section>
+          <h2>Open Data or Open Science?</h2>
+          <ul>
+            <li>
+              Hint: The presenter wants the latter.
+            </li>
+            <li>
+              <a href="https://data.ny.gov">data.ny.gov</a>
+            </li>
+            <li>
+              Open Data is more powerful when it comes with
+              open, reproducible, transparent analysis
+            </li>
+            <li>
+              Added benefit: Open science comes with no
+              additional privacy concerns.
+            </li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>
+                The Cuomo administration has made great strides in
+                publishing government data to the public.
+              </li>
+              <li>
+                But data without code is fairly useless. True
+                transparency comes from a combination of the two. Open
+                science, transparent and reproducible, like what the
+                Nightscout project is doing, enables citizens to
+                understand its government.
+              </li>
+              <li>
+                Many of these open data sets are anonymous versions
+                of data sets used internally for measurement and
+                evaluation. Citizens should have access to the code
+                AND the data, because you need both to understand. And
+                when a license to SAS and SPSS cost thousands of
+                dollars, I argue that these tools are fundamentally
+                inappropriate for this purpose.
+              </li>
+              <li>
+                As citizens we have a right to know what government is
+                doing. Wrapping that understanding up in a tool that
+                is inaccessible to all by the wealthiest does not lead
+                to further citizen engagement.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Section: Job Growth =================================== -->
+        <section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+	        <h1>Job Growth</h1>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>
+                Everyone wants a job.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Jobs</h2>
+          <br/>
+          <img src="img/fig_1a_indeedjobs2014ge2501.png"
+               caption="The number of analytics jobs for
+                        the more popular software (250 jobs or more,
+                        2/2014)."
+               style="position: relative; top:-75px;
+                      z-index:-1;"
+               >
+          <aside class="notes">
+            <ul>
+              <li>
+                February 2014, relative distribution of what appear to
+                be analysis related jobs on Indeed.com, which is
+                really awesome in that it makes its data accessible to
+                others through an API.
+              </li>
+              <li>
+                Discuss Java, SAS, R, SPSS
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Who Wants A Job? ---------------------------------------------- -->
+        <section>
+          <h2>Who Wants A Job?</h2>
+          <br/>
+          
+          <div style="width:50%; float:left;text-align:
+                      left;">
+            <h3>Comparative Number of Jobs</h3>
+            <a href="http://www.indeed.com/jobtrends?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" title="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends">
+              <img width="540" height="300" src="img/indeed-jobgraph.png">
+            </a>
+          </div>
+          <div style="width:50%; float:right;">
+            <h3>Growth over Time</h3>
+            <a href="http://www.indeed.com/jobtrends?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" title="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends">
+              <img width="540" height="300" src="img/indeed-growth-jobgraph.png">
+            </a>
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>
+                Although SAS has more jobs posted on indeed.com, SAS
+                isn't growing. R is. R is growing rapidly.
+              </li>
+              <li>
+                This isn't an argument against SAS. SAS is still
+                bigger than R. It is an argument that knowing both is
+                a good thing.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Indeed.com Query ---------------------------------------------- -->
+        <section>
+          <h2>Indeed.com Query</h2>
+          <small style="text-align:left;"><code>
+              R
+              !"R D" !"A R" !"H R" !"R N" !toys !kids !" R Walgreen" !walmart !"HVAC R" !"R Bard"<br/>
+              and ( "biostatistics" or "data analysis" or "data analyst"
+              or "epidemiologist"<br/>
+              or "healthcare analysis" or "healthcare analyst"<br/>
+              or "statistical"<br/>
+              )<br/>
+              ,SAS
+              !"system administrator" !"school age" !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse<br/>
+              and ( "biostatistics" or "data analysis" or "data analyst"
+              or "epidemiologist"<br/>
+              or "healthcare analysis" or "healthcare analyst"<br/>
+              or "statistical"<br/>
+              )
+          </code></small>
+          <aside class="notes">
+            <ul>
+              <li>
+                The former pictures are links to the site on
+                indeed.com's page where you can reproduce these
+                pictures. The code on this page is the code I used to
+                produce the pictures. Unfortunately, indeed.com is
+                blocked here at DOH, so these are static images, not
+                live returns from their website.
+              </li>
+              <li>
+                But, here is the code I used. Feel free to reproduce
+                it, improve it, etc.
+              </li>
+              <li>
+                Another plug for r4stats, where I got the idea for
+                doing this. This is a modified version of what they
+                publish. My modifications are an attempt to focus the
+                query on health care, which is obviously more relevant
+                for this audience.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Section: Everyone Writes About R ============================== -->
+        <section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+	        <h1>Everyone Writes About R</h1>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>
+                We are almost done here, but there is so much more I
+                could say. Fortunately, I'll bow out and let others
+                continue the conversation.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Lots of Articles About . . . . R! ----------------------------- -->
+        <section>
+          <h2>Lots of Articles About . . . . R!</h2>
+          <small>
+            <table>
+              <tr>
+                <td width="33.3%">
+                  New York Times
+                </td>
+                <td width="33.3%">
+                  <a href="http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=0">
+                    Data Analysts Captivated by R's Power
                   </a>
-                  <aside class="notes">
-                    <ul>
-                      <li>
-                        But what if you want to deploy a custom
-                        interface? An interface to help an end-user
-                        understand a specific idea? What if you don't
-                        want to separate your code from your
-                        presentation?
-                      </li>
-                      <li>
-                        SHINY is here to help. This is an extension to
-                        R that allows you to build dashboards and
-                        complex analytic websites in R. We will
-                        explore this particlar dashboard in more
-                        detail shortly.
-                      </li>
-                      <li>
-                        If you want a modern, powerful interface, for
-                        programming, interactive research or
-                        presentation, R has an option that at the very
-                        least rivals anything else on the market.
-                      </li>
-                      <li>
-                        Total cost for the software seen in this
-                        presentation? Nothing. At its best, science is
-                        a meritocracy. R, and the dynamic ecosystem
-                        around it epitomizes this meritocratic spirit.
-                      </li>
-                    </ul>
-                  </aside>
-                </section>
-                
-
-                <!-- Literate Programming ------------------------------------------ -->
-		        <section>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h2>Literate Programming</h2>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-                        <img src="svg/r.svg" height="75%" width="75%">
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                          <li>
-                            From Wikipedia: The literate programming
-                            paradigm, as conceived by Knuth,
-                            represents a move away from writing
-                            programs in the manner and order imposed
-                            by the computer, and instead enables
-                            programmers to develop programs in the
-                            order demanded by the logic and flow of
-                            their thoughts. Literate programs are
-                            written as an uninterrupted exposition of
-                            logic in an ordinary human language, much
-                            like the text of an essay, in which macros
-                            are included to hide abstractions and
-                            traditional source code.
-                          </li>
-                          <li>
-                            In other words . . . let's stop writing
-                            reports and papers by running an analysis
-                            and then cutting and pasting the results
-                            into Word. This is an approach to science
-                            that combines the writing and the
-                            programming as a single, cohesive piece.
-                          </li>
-                          <li>
-                            Literate Programming is a vast topic and
-                            is worthy of multiple presentations in its
-                            own right. Donald Knuth's ideas have had a
-                            deep impact on how I prefer to approach
-                            science. For the next few minutes, I would
-                            like to show you some simple examples of
-                            what literate programming means, to me.
-                          </li>
-                          <li>
-                            At this point, it is worth pointing out,
-                            this presentation is an example of
-                            literate programming. In the following
-                            slides, we will look at some data, and
-                            pictures. I didn't cut and paste this
-                            information into this slide show. I
-                            embedded it into the slide show. Let me
-                            show you what I mean. But, to do that, I
-                            need a data set.
-                          </li>
-                        </ul>
-                    </aside>
-		        </section>
-
-                <!-- MTCARS ------------------------------------------------ -->
-                <section>
-                    <h2>MTCARS</h2>
-                    <p style="text-align:left;">
-                        The data was extracted from the 1974 Motor
-                        Trend US magazine, and comprises fuel
-                        consumption and 10 aspects of automobile
-                        design and performance for 32 automobiles
-                        (1973 - 1974 models).
-                    </p>
-                </section>
-
-                <section>
-                  <h2>MTCARS - Just A Glimpse</h2>
-
-                  <small>
-                    <!--begin.rcode
-                        data(mtcars)
-                        kable(head(mtcars))
-                        end.rcode-->
-                  </small>
-                  <p>Source: <a href="http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html</a>
-                  
-                    <aside class="notes">
-                        <ul>
-                          <li>
-                            This is the first 10 lines of the
-                            mtcars data set.
-                          </li>
-                          <li>
-                            We are going to focus on the mpg, cyl, and
-                            disp columns.
-                          </li>
-                          <li>
-                            Here, I am displaying the code used to
-                            produce the tabular display. As we will
-                            see, I don't have to do that. Sometimes it
-                            is beneficial to do so. Usually it is not.
-                          </li>
-                          <li>
-                            mpg 	Miles/(US) gallon
-                          </li>
-                          <li>
-                            cyl 	Number of cylinders
-                          </li>
-                          <li>
-                            disp 	Displacement (cu.in.)
-                          </li>
-                          <li>
-                            hp 	Gross horsepower
-                          </li>
-                          <li>
-                            drat 	Rear axle ratio
-                          </li>
-                          <li>
-                            wt 	Weight (lb/1000)
-                          </li>
-                          <li>
-                            qsec 	1/4 mile time
-                          </li>
-                          <li>
-                            vs 	V/S
-                          </li>
-                          <li>
-                            am 	Transmission (0 = automatic, 1 =
-                            manual)
-                          </li>
-                          <li>
-                            gear 	Number of forward gears
-                          </li>
-                          <li>
-                            carb 	Number of carburetors
-                          </li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section>
-                  <h2> R Markdown</h2>
-                  <small style="text-align:left;">
-                    <code style="text-align:left;">
-                      ---<br/>
-                      title: Minimal Markdown Example<br/>
-                      author: Andy Choens, MSW<br/>
-                      ---<br/>
-                      <br/>
-                      This is a simple, minimal example of report written in R markdown. The
-                      purpose of this report is two fold:<br/>
-                      <br/>
-                      1. To enlighten you about the relationship between engine displacement
-                      and gas mileage.<br/>
-                      2. Provide an accessible introduction to Literate Programming.<br/>
-                      <br/>
-                      The source of the data is the 1974 Motor Trend USA Magazine.<br/>
-                      <br/>
-                      ```{r echo=FALSE}<br/>
-                      <br/>
-                      ## Init R and Config<br/>
-                      library(ggplot2)<br/>
-                      data(mtcars)<br/>
-                      <br/>
-                      ```<br/>
-                    </code>
-                  </small>
-                  <aside class="notes">
-                    <ul>
-                      <li>
-                        You can build a literate programming in HTML,
-                        Word, LaTeX, etc. And all of those languages
-                        and tools have their place. But right now I
-                        want to focus on something called R Markdown.
-                      </li>
-                      <li>
-                        Walk through the parts of the document.
-                      </li>
-                      <li>
-                        95 lines of text and programming.
-                      </li>
-                    </ul>
-                  </aside>
-                </section>
-
-                <section>
-                  <h2>Insert a Graph</h2>
-                  <small style="text-align:left;">
-                    <code>
-                      # Scatterplot<br/>
-                      <br/>
-                      Displacement is the independent variable. Gas mileage is the dependent
-                      variable. Correlation does not imply causation, except for this time
-                      when it does.<br/>
-                      <br/>
-                      ```{r echo=FALSE}<br/>
-                      <br/>
-                      ggplot(data = mtcars, aes(x=disp, y=mpg)) + geom_point(shape=1) + geom_smooth(method=lm)<br/>
-                      <br/>
-                      ```<br/>
-                    </code>
-                  </small>
-                </section>
-
-                <section>
-                  <h2>Real Output</h2>
-                  <ul>
-                    <li>
-                       <a href="vignettes/minimal-markdown.Rmd">Code</a>
-                    </li>
-                    <li>
-                       <a href="vignettes/minimal-markdown.pdf">PDF: <small><code>render("vignettes/minimal-markdown.Rmd", pdf_document())</code></small></a>
-                    </li>
-                    <li>
-                       <a href="vignettes/minimal-markdown.docx">Word: <small><code>render("vignettes/minimal-markdown.Rmd", word_document())</code></small></a>
-                    </li>
-                    <li>
-                       <a href="vignettes/minimal-markdown.html">HTML: <small><code>render("vignettes/minimal-markdown.Rmd", html_document())</code></small></a>
-                    </li>
-                    <aside class="notes">
-                      <ul>
-                        <li>
-                          Literate programming removes errors due to
-                          cutting and pasting. The output is transparent
-                          and reproducible. 
-                        </li>
-                        <li>
-                          It is transparent, because you can look at
-                          the data and look at the code and know where
-                          the numbers come from. It is reproducible,
-                          because I will get the exact same results
-                          EVERY time I run this "report".
-                        </li>
-                        <li>
-                          And if you give me a new data set (formatted
-                          the same way), I can spit out a new, equally
-                          accurate report in seconds. You cannot make
-                          these claims when you assemble a report by hand.
-                        </li>
-                        <li>
-                          Court example.
-                        </li>
-                    </aside>
-                </section>
-
-                <section>
-                  <h2>The Return of SHINY</h2>
-                  <a href="http://choens.shinyapps.io/why-r-shiny">
-                    <img src="img/screenshots/shiny.png" width="100%">
+                </td>
+                <td>
+                  January 6, 2009
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  New York Times
+                </td>
+                <td>
+                  <a href="http://bits.blogs.nytimes.com/2009/01/08/r-you-ready-for-r/">
+                    R You Ready For R?
                   </a>
-                  <aside class="notes">
-                    <ul>
-                      <li>
-                        R SHINY, the customizable interface for R is
-                        another, more complex form of literate programming.
-                      </li>
-                      <li>
-                        In this case, it is interactive.
-                      </li>
-                      <li>
-                        And that is awesome.
-                      </li>
-                      <li>
-                        
-                      </li>
-                    </ul>
-                  </aside>
-                </section>
-                
-                <!-- Section: Open Source / Open Science =================== -->
-		        <section>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h2>Open Source /<br/> Open Science</h2>
-                        <h3>Free as in freedom, not beer.</h2>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-                        <img src="svg/r.svg" height="75%" width="75%">
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                The term open source means different things to
-                                different people. In a nutshell, people interpret it
-                                to mean 'free'.
-                            </li>
-                            <li>
-                                But it means much more than that. Open Source, or more
-                                formally, Free and Open Source Software aka FOSS, is an
-                                ideological method for the development, distribution
-                                and use of software.
-                            </li>
-                            <li>
-                                But it is this ideology that drives so many of the
-                                practical reasons people cite when choosing to use
-                                R.
-                            </li>
-                            <li>
-                                The ecosystem, the integration with other tools, the
-                                veritable multitude of user interface options
-                                available for R. . . . 
-                            </li>
-                            <li>
-                                All of this is made possible by the ideological
-                                choices made by the R-Core team who lead the
-                                development of R.
-                            </li>
-                            <li>
-                              The R ecosystem operates as a
-                              meritocracy. Anyone can contribute. Your
-                              ability to use the technology and to
-                              contribute to its development is not
-                              limited by the need to purchase an
-                              expensive license. The SAS institute
-                              could develop a SAS version of
-                              SHINY. Maybe it already has. But SHINY
-                              is free. SHINY can be used as easily by
-                              someone in Mozambique as it can in New
-                              York. And . . . . it is.
-                            </li>
-                            <li>
-                              I don't think R is competing with SAS
-                              and SPSS because it is such a beautiful
-                              language. It isn't. It is competing with
-                              them because of the side affects of the
-                              decision to develop R in an open,
-                              inclusive and transparent
-                              manner. Transparency, and a tradition of
-                              sharing code results in better science.
-                            </li>
-                    </aside>
-		        </section>
+                </td>
+                <td>
+                  January 8, 2009
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Fast Company
+                </td>
+                <td>
+                  <a href="http://www.fastcolabs.com/3030063/why-the-r-programming-language-is-good-for-business">
+                    Why The R Programming Language Is Good For Business
+                  </a>
+                </td>
+                <td>
+                  May 5, 2014
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Fast Company
+                </td>
+                <td>
+                  <a href="http://www.fastcolabs.com/3030716/the-9-best-languages-for-crunching-data">
+                    The 9 Best Programming Languages For Crunching
+                    Data
+                  </a>
+                </td>
+                <td>
+                  May 5, 2014
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Fast Company
+                </td>
+                <td>
+                  <a href="http://www.fastcocreate.com/1682905/where-data-and-creativity-meet-confessions-of-a-quant-madison-avenues-hitman">
+                    Where Data And Creativity Meet: Confessions Of
+                    A Quant, Madison Avenue's "Hitman".
+                  </a>
+                </td>
+                <td>
+                  ~ 2 Years Ago
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Revolution Analytics
+                </td>
+                <td>
+                  <a href="http://www.revolutionanalytics.com/r-is-still-hot">
+                    R Is Still Hot and Getting Hotter
+                  </a>
+                </td>
+                <td>
+                  January 14, 2015
+                </td>
+              </tr>
+            </table>
+          </small>
+          <aside class="notes">
+            <ul>
+              <li>
+                With the exception of the article by Revolution
+                Analytics, all of these articles were in the
+                mainstream press.
+              </li>
+              <li>
+                I should point out that the NY Times publicly uses R,
+                so their coverage could be a little biased. I don't
+                know if Fast Company uses it internally or not.
+              </li>
+              <li>
+                I included the white paper by Revolution Analytics,
+                because it goes into a lot of great detail. I'm not
+                saying this is an "article". This is an advocacy
+                piece, written by some very smart people.
+              </li>
+              <li>
+                And I'm apparently not the only one who thinks they
+                are clever. Earlier this year, Microsoft bought
+                Revolution Analytics because they felt they were left
+                out of the ongoing revolution in data
+                analytics. Although R has its roots and history in
+                Unix, I am curious to see what Microsoft can do with
+                this. Enhanced interoperability with Excel, SQL
+                Server, Access, etc. would certainly be interesting.
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-                <!-- Popular Examples: Open Source -------------------------------- -->
-                <section>
-                    <h2>Open Source Is Everywhere:</h2>
-                    <table>
-                        <tr>
-                            <td><h3>FOSS:</h3></td>
-                            <td>
-                                <img src="img/logos/firefox.jpg" height="128px"
-                                     width="128px" style="vertical-align:middle;">
-                            </td>
-                            <td>
-                                <img src="img/logos/adium.png" height="128px"
-                                     width="128px" style="vertical-align:middle;">
-                            </td>
-                            <td>
-                                <img src="img/logos/java.png" height="128px" width="128px"
-                                     style="vertical-align:middle;">
-                            </td>
-                            <tr>
-                                <td></td>
-                                <td style="text-align:center;"><a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></td>
-                                <td style="text-align:center;"><a href="https://www.adium.im/">Adium</a></td>
-                                <td style="text-align:center;"><a href="https://www.java.com/en/download/">Java</a></td>
-                            </tr>
-                            <tr>
-                                <td><h3>Based On:</h3></td>
-                                <td>
-                                    <img src="img/logos/chrome.png" height="128px"
-                                         width="128px" style="vertical-align:middle;">
-                                </td>
-                                <td>
-                                    <img src="img/logos/safari.jpg" height="128px"
-                                         width="128px" style="vertical-align:middle;">
-                                </td>
-                                <td>
-                                    <img src="img/logos/android.png" height="128px"
-                                         width="128px" style="vertical-align:middle;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td style="text-align:center;"><a href="http://www.google.com/chrome/">Chrome</a></td>
-                                <td style="text-align:center;"><a href="https://www.apple.com/safari/">Safari</a></td>
-                                <td style="text-align:center;"><a href="https://www.android.com/">Android</a></td>
-                            </tr>
-                            <tr>
-                            </tr>
-                    </table>
-                    <aside class="notes">
-                      <ul>
-                        <li>
-                          Many people feel that open source software
-                          isn't mainstream. It is mainstream. It is
-                          everywhere. If you have ever used a
-                          computer, you have used open source
-                          software.
-                        </li>
-                      </ul>
-                    </aside>
-                </section>
+        <!-- Questions ===================================================== -->
+        <section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+	        <h1>Questions</h1>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+          </div>
+          <aside class="notes">
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
+        </section>
 
-                <!-- DOH: Open Source --------------------------------------------- -->
-                <section>
-                    <h2>Even @ DOH:</h2>
-                    <table>
-                        <tr>
-                            <td><h3>FOSS:</h3></td>
-                            <td style="text-align:center;">
-                                <img src="img/logos/filezilla.png"
-                                     height="128px" width="128px" style="vertical-align:middle;">
-                            </td>
-                            <td style="text-align:center;">
-                                <img src="img/logos/workbench.png" height="128px"
-                                     width="128px" style="vertical-align:middle;">
-                            </td>
-                            <td style="text-align:center;">
-                                <img src="img/logos/7-zip.jpg" height="128px"
-                                     width="128px" style="vertical-align:middle;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td style="text-align:center;"><a href="https://filezilla-project.org/">Filezilla</a></td>
-                            <td style="text-align:center;"><a href="http://www.sql-workbench.net/">SQL Workbench/J</a></td>
-                            <td style="text-align:center;"><a href="http://www.7-zip.org/">7-Zip</a></td>
-                        </tr>
-                        <tr>
-                            <td><h3>Based On:</h3></td>
-                            <td style="text-align:center;">
-                                <img src="img/logos/hp-vertica.jpeg" height="128px"
-                                     width="128px" style="vertical-align:middle;">
-                            </td>
-                            <td style="text-align:center;"> 
-                                <img src="img/logos/SAS.jpg" height="128px"
-                                     width="128px" style="vertical-align:middle;">
-                            </td>
-                            <td style="text-align:center;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td style="text-align:center;"><a href="http://www.vertica.com/">Vertica</a></td>
-                            <td style="text-align:center;"><a href="http://www.sas.com/en_us/home.html">SAS</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                        </tr>
-                    </table>
-                    <aside class="notes"></aside>
-                </section>
+      </div>
 
-                <!-- Fact: Open Source is everywhere ------------------------------ -->
-                <section>
-                    <h1>Why?</h1>
-                    <aside class="notes"></aside>
-                </section>
+    </div>
 
-                <!-- The Four Freedoms -------------------------------------------- -->
-                <section>
-                    <h2> The Four Freedoms</h2>
-                    <ol start ="0">
-                        <li>
-                            The freedom to run the program for any purpose.
-                        </li>
-                        <li>
-                            The freedom to study how the program works, and change
-                            it to make it do what you wish.
-                        </li>
-                        <li>
-                            The freedom to redistribute copies so you can help your
-                            neighbor.
-                        </li>
-                        <li>
-                            The freedom to improve the program, and release your
-                            improvements (and modified versions in general) to the
-                            public, so that the whole community benefits.
-                        </li>
-                    </ol>
-                    <br/>
-                    <img src="img/logos/fsf.org.png">
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                <a href="https://en.wikipedia.org/wiki/Free_software">Wikipedia</a>,
-                                lists the four freedoms associated with Free Software,
-                                as defined by the Free Sotware Foundation as:
-                            </li>
-                            <li>
-                                Richard Stallman wrote these, thinking about
-                                software. But, at the time her was working at the AI
-                                lab at MIT, so science is not an unknown idea to him.
-                            </li>
-                            <li>
-                                I believe these four freedoms fit in well with the
-                                scientific process. Replace the word
-                                program with analysis. And re-read it.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-                <section>
-                  <h2>Real: Code, Science, People</h2>
-                  <img src="img/logos/nightscout.png">
-                  <h3>This ain't Fishy Science</h3>
-                </section>
-                
+    <script>
 
-                <!-- Section: Future Opportunities ================================ -->
-                <section>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h2>Future Opportunities</h2>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-                        <img src="svg/r.svg" height="75%" width="75%">
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </aside>
-		        </section>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
 
-                <section>
-                    <h2>Jobs</h2>
-                    <br/>
-                      <img src="img/fig_1a_indeedjobs2014ge2501.png"
-                           caption="The number of analytics jobs for
-                    the more popular software (250 jobs or more,
-                    2/2014)."
-                           style="position: relative; top:-75px;
-                                  z-index:-1;"
-                           >
-                    <aside class="notes">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </aside>
-                </section>
-                
-                <!-- Accelerating Growth ------------------------------------------ -->
-                <section>
-                    <h2>Who Wants A Job?</h2>
-                    <br/>
-                    
-                    <div style="width:50%; float:left;text-align:
-                                left;">
-                      <h3>Comparative Number of Jobs</h3>
-                      <a href="http://www.indeed.com/jobtrends?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" title="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends">
-                            <img width="540" height="300" src="img/indeed-jobgraph.png">
-                        </a>
-                    </div>
-                    <div style="width:50%; float:right;">
-                      <h3>Growth over Time</h3>
-                        <a href="http://www.indeed.com/jobtrends?q=R++%21%22R+D%22+%21%22A+R%22+%21%22H+R%22+%21%22R+N%22++%21toys+%21kids+%21%22+R+Walgreen%22+%21walmart+%21%22HVAC+R%22+%21%22R+Bard%22++and+%28+%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29+%2C+SAS++%21%22system+administrator%22+%21%22school+age%22++%21sata+%21firmware+%21scsi+%21raid+%21samsung+%21scandinavian+%21sonar+%21nurse+and+%28%22biostatistics%22+or+%22data+analysis%22+or+%22epidemiology%22+or+%22healthcare+analysis%22+or+%22healthcare+analytics%22+or+%22statistical+analysis%22+%29" title="R  !&#034;R D&#034; !&#034;A R&#034; !&#034;H R&#034; !&#034;R N&#034;  !toys !kids !&#034; R Walgreen&#034; !walmart !&#034;HVAC R&#034; !&#034;R Bard&#034;  and ( &#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) , SAS  !&#034;system administrator&#034; !&#034;school age&#034;  !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse and (&#034;biostatistics&#034; or &#034;data analysis&#034; or &#034;epidemiology&#034; or &#034;healthcare analysis&#034; or &#034;healthcare analytics&#034; or &#034;statistical analysis&#034; ) Job Trends">
-                            <img width="540" height="300" src="img/indeed-growth-jobgraph.png">
-                        </a>
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </aside>
-                </section>
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-                <section>
-                  <h2>Indeed.com Query</h2>
-                  <small style="text-align:left;"><code>
-                      R
-                      !"R D" !"A R" !"H R" !"R N" !toys !kids !" R Walgreen" !walmart !"HVAC R" !"R Bard"<br/>
-                      and ( "biostatistics" or "data analysis" or "data analyst"
-                      or "epidemiologist"<br/>
-                      or "healthcare analysis" or "healthcare analyst"<br/>
-                      or "statistical"<br/>
-                      )<br/>
-                      ,SAS
-                      !"system administrator" !"school age" !sata !firmware !scsi !raid !samsung !scandinavian !sonar !nurse<br/>
-                      and ( "biostatistics" or "data analysis" or "data analyst"
-                      or "epidemiologist"<br/>
-                      or "healthcare analysis" or "healthcare analyst"<br/>
-                      or "statistical"<br/>
-                      )
-                  </code></small>
-                </section>
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+      ]
+      });
 
-                <!-- Section: Everyone Writes About R ============================ -->
-                <section>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h2>Everyone Writes About R</h2>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-                        <img src="svg/r.svg" height="75%" width="75%">
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </aside>
-		        </section>
+    </script>
 
-                <section>
-                  <h2>Lots of Articles About . . . . R!</h2>
-                  <small>
-                    <table>
-                      <tr>
-                        <td width="33.3%">
-                          New York Times
-                        </td>
-                        <td width="33.3%">
-                          <a href="http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=0">
-                            Data Analysts Captivated by R's Power
-                          </a>
-                        </td>
-                        <td>
-                          January 6, 2009
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          New York Times
-                        </td>
-                        <td>
-                          <a href="http://bits.blogs.nytimes.com/2009/01/08/r-you-ready-for-r/">
-                            R You Ready For R?
-                          </a>
-                        </td>
-                        <td>
-                          January 8, 2009
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Fast Company
-                        </td>
-                        <td>
-                          <a href="http://www.fastcolabs.com/3030063/why-the-r-programming-language-is-good-for-business">
-                            Why The R Programming Language Is Good For Business
-                          </a>
-                        </td>
-                        <td>
-                          May 5, 2014
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Fast Company
-                        </td>
-                        <td>
-                          <a href="http://www.fastcolabs.com/3030716/the-9-best-languages-for-crunching-data">
-                            The 9 Best Programming Languages For Crunching
-                            Data
-                          </a>
-                        </td>
-                        <td>
-                          May 5, 2014
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Fast Company
-                        </td>
-                        <td>
-                          <a href="http://www.fastcocreate.com/1682905/where-data-and-creativity-meet-confessions-of-a-quant-madison-avenues-hitman">
-                            Where Data And Creativity Meet: Confessions Of
-                            A Quant, Madison Avenue's "Hitman".
-                          </a>
-                        </td>
-                        <td>
-                          ~ 2 Years Ago
-                        </td>
-                      </tr>
-                      <tr>
-                      <td>
-                        Revolution Analytics
-                      </td>
-                      <td>
-                        <a href="http://www.revolutionanalytics.com/r-is-still-hot">
-                          R Is Still Hot and Getting Hotter
-                        </a>
-                      </td>
-                      <td>
-                        January 14, 2015
-                      </td>
-                      </tr>
-                    </table>
-                  </small>
-                </section>
-
-                <!-- Section: Everyone Writes About R ============================ -->
-                <section>
-                    <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			            <h1>Questions</h1>
-                    </div>
-                    <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-                        <img src="svg/r.svg" height="75%" width="75%">
-                    </div>
-                    <aside class="notes">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </aside>
-		        </section>
-
-	        </div>
-
-	    </div>
-
-	    <script src="lib/js/head.min.js"></script>
-	    <script src="js/reveal.js"></script>
-
-	    <script>
-
-	     // Full list of configuration options available at:
-	  // https://github.com/hakimel/reveal.js#configuration
-	     Reveal.initialize({
-		     controls: true,
-		     progress: true,
-		     history: true,
-		     center: true,
-
-		     transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-		     // Optional reveal.js plugins
-		     dependencies: [
-		         { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-		         { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		         { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		         { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-		         { src: 'plugin/zoom-js/zoom.js', async: true },
-		         { src: 'plugin/notes/notes.js', async: true }
-		     ]
-	     });
-
-	    </script>
-
-    </body>
+  </body>
 </html>
