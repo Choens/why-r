@@ -3,14 +3,14 @@
 
   <head>
 <style type="text/css">
-.knitr.inline {
+.knitr .inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
 .error {
 	font-weight: bold;
 	color: #FF0000;
-},
+}
 .warning {
 	font-weight: bold;
 }
@@ -18,19 +18,19 @@
 	font-style: italic;
 }
 .source, .output, .warning, .error, .message {
-	padding: 0em 1em;
+	padding: 0 1em;
   border:solid 1px #F7F7F7;
 }
 .source {
   background-color: #f5f5f5;
 }
-.rimage.left {
+.rimage .left {
   text-align: left;
 }
-.rimage.right {
+.rimage .right {
   text-align: right;
 }
-.rimage.center {
+.rimage .center {
   text-align: center;
 }
 .hl.num {
@@ -139,10 +139,11 @@
         <!-- URLs to Remember -------------------------------------- -->
         <section>
           <h2>URLs To Remember:</h2>
+          <br/>
           <ol start=0>
-            <li><a href="http://choens.github.io/why-r/">http://choens.github.io/why-r</a></li>
-            <li><a href="https://github.com/choens/why-r/tree/gh-pages">https://github.com/choens/why-r/tree/gh-pages</a></li>
-            <li><a href="http://cran.r-project.org/">http://cran.r-project.org/</a></li>
+            <li><a href="http://choens.github.io/why-r/" target="_blank">choens.github.io/why-r</a></li>
+            <li><a href="https://github.com/choens/why-r" target="_blank">github.com/choens/why-r</a></li>
+            <li><a href="http://cran.r-project.org" target="_blank">cran.r-project.org</a></li>
           </ol>
           <aside class="notes">
             <ul>
@@ -181,14 +182,13 @@
           <div style=" display:inline-block; margin:0 auto; float:left; width:60%;">
             <ul>
               <li class="fragment" data-fragment-index="1">
-                Some guy with a beard likes it.
+                A guy with a beard likes it.
               </li>
               <li class="fragment" data-fragment-index="2">
-                Someone on the Internet said it was
-                great.
+                The Internet says it is great.
               </li>
               <li class="fragment" data-fragment-index="3">
-                SAS isn't doing what you want it to. (Operator error?)
+                SAS is being stubborn. (Operator error?)
               </li>
             </ul>
           </div>
@@ -223,11 +223,11 @@
           </div>
           <div style="display:inline-block; margin:0 auto; float:right; width:60%;">
             <ul>              
-              <li class="fragment">Ecosystem</li>
-              <li class="fragment">Literate Programming</li>
+              <li class="fragment">Open Ecosystem</li>
               <li class="fragment">Open Source / Open Science</li>
+              <li class="fragment">Literate Programming</li>
               <li class="fragment">Job Growth</li>
-              <li class="fragment">Everyone Writes About R</li>
+              <li class="fragment">Lingua franca of analysis</li>
             </ul>
           </div>
           <aside class="notes">
@@ -318,7 +318,7 @@
         <!-- Section: Ecosystem =========================================== -->
 		<section>
           <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			<h1>Ecosystem</h1>
+			<h1>Open Ecosystem</h1>
           </div>
           <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
             <img src="svg/r.svg" height="75%" width="75%">
@@ -347,20 +347,130 @@
           </aside>
 		</section>
 
+        <!-- Analytic Tools ================================================ -->
+		<section>
+			<h2>What analytic tools do you use?</h2>
+            <ul>
+              <li>
+                Who develops these tools? 
+              </li>
+              <li>
+                Why do they develop them?
+              </li>
+              <li>
+                Can you participate in the development?
+              </li>
+              <li>
+                How would you participate?
+              </li>
+              <li>
+                How do you address shortcomings in these tools?
+              </li>
+            </ul>
+		</section>
+
+        <section>
+          <h2>The Cathedral and the Bazaar</h2>
+
+          <p style="text-align:left;">
+            Published in the late 90's by Eric S. Raymond. CatB is one
+            of the central pillars of open source ideology.
+          </p>
+          <p style="text-align:left;">
+            <b>Two code development models:</b>
+          </p>
+          <ul style="text-align:left;">
+            <li>
+              <b>Cathedral Model:</b> By an exclusive group of
+              software developers. Participation is limited.
+            </li>
+            <li>
+              <b>Bazaar Model:</b> Over the Internet in view of the
+              public. Participation is open and meritocratic.
+            </li>
+          </ul>
+          <aside class="notes">
+            When he wrote CatB, he was actually comparing two OPEN
+            SOURCE development patterns. Emacs was an example of the
+            Cathedral. Linux was the example of the Bazaar.
+
+            This is a good analogy for analytics tools, because
+            NOTHING is more exclusive than the club of developers who
+            are leading SAS, SPSS, etc.
+
+            If you use code developed in a Cathedral, you cannot
+            participate in the process. If you use code developed in a
+            Bazaar, your participation is practically an expactation.
+          </aside>
+          
+        </section>
+
+        <section>
+          <h2>The Cathedral and the Bazaar</h2>
+
+          <h3>The R Ecosystem is a GIANT Bazaar.</h3>
+
+          <ul>
+            <li>
+              Interwoven, confusing mess of ideas, ingenuity and
+              corporate-speak.
+            </li>
+            <li>
+              Intimidating for anyone who is used to using Cathedral tools.
+            </li>
+            <li>
+              The future belongs to the Bazaar because it
+              can innovate and change.
+            </li>
+          </ul>
+          
+        </section>
+
+        <section>
+          <h2>Bazaar Begets Open</h2>
+
+          <ul>
+            <li>
+              R's development is open and transparent.
+            </li>
+            <li>
+              Participation is meritocratic.
+            </li>
+            <li>
+              This open development, combined with a permissive
+              license means ANYONE can extend, adapt or alter R.
+            </li>
+            <li>
+              The Bazaar model leads to an open ecosystem and that has
+              profound implications.
+            </li>
+          </ul>
+          
+        </section>
+        
+
         <!-- Packages ------------------------------------------------------ -->
         <section>
-          <h2>Packages</h2>
-          <p style="text-align:left">
-            The capabilities of R are extended through
-            user-created packages, which allow specialized
-            statistical techniques, graphical devices (<a href="http://cran.r-project.org/web/packages/ggplot2/index.html">ggplot2</a>),
-            import/export capabilities, reporting tools
-            (<a href="http://cran.r-project.org/web/packages/knitr/index.html">knitr</a>, <a href="http://www.statistik.lmu.de/~leisch/Sweave/">Sweave</a>),
-            etc. These packages are developed primarily in
-            R, and sometimes in Java, C, C++ and Fortran.
-          </p>
+          <h2>Open Ecosystem: Packages</h2>
+          <ul>
+            <li>
+              R can be extended by installing user-created packages.
+              <ul>
+                <li> Advanced Statistical Techniques, </li>
+                <li> Visual Display Tools
+                (<a href="http://cran.r-project.org/web/packages/ggplot2/index.html">ggplot2</a>), </li>
+                <li> Import/Export Capabilities, </li>
+                <li>
+                  Reporting Tools (<a href="http://cran.r-project.org/web/packages/knitr/index.html">knitr</a>
+                  , <a href="http://www.statistik.lmu.de/~leisch/Sweave/">Sweave</a>),
+                  etc.
+                </li>
+              </ul>
           <aside class="notes">
             <ul>
+              <li>
+                An Open Ecosystem (Bazaar) is reshaping analytics.
+              <li>
               <li>
                 Anyone in this room can write and contribute a
                 package. Anyone in Albany can write and contribute a
@@ -500,7 +610,7 @@
 
         <!-- Package Examples ---------------------------------------------- -->
         <section>
-          <h2>Packages Examples</h2>
+          <h2>Example Packages: 1</h2>
           <table style="width:100%;">
             <tr>
               <td style="width:33.3%; text-align:center;">
@@ -545,7 +655,7 @@
         
         <!-- Package Craziness --------------------------------------------- -->
         <section>
-          <h2>Package Craziness</h2>
+          <h2>Example Packages: 2</h2>
           <table style="width:100%;">
             <tr>
               <td style="width:50%; text-align:center;">
@@ -599,7 +709,7 @@
 
         <!-- Commercial Support ------------------------------------ -->
         <section>
-          <h2>Commercial Support</h2>
+          <h2>Open Ecosystem: Commercial Support</h2>
           <div style="display:inline-block; margin:0 auto; float:left; width:33%;">
             <h3>Programming Languages</h3>
             <ul>
@@ -625,6 +735,7 @@
                 <li>Hadoop</li>
                 <li>Oracle</li>
                 <li>PostgreSQL</li>
+                <li>SQL Server</li>
                 <li>Vertica</li>
               </small>
             </ul>            
@@ -839,388 +950,33 @@
           </aside>
         </section>
         
-
-        <!-- Literate Programming ------------------------------------------ -->
-		<section>
-          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
-			<h2>Literate Programming</h2>
-          </div>
-          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
-            <img src="svg/r.svg" height="75%" width="75%">
-          </div>
-          <aside class="notes">
-            <ul>
-              <li>
-                From Wikipedia: The literate programming paradigm, as
-                conceived by Knuth, represents a move away from
-                writing programs in the manner and order imposed by
-                the computer, and instead enables programmers to
-                develop programs in the order demanded by the logic
-                and flow of their thoughts. Literate programs are
-                written as an uninterrupted exposition of logic in an
-                ordinary human language, much like the text of an
-                essay, in which macros are included to hide
-                abstractions and traditional source code.
-              </li>
-              <li>
-                In other words . . . stop writing reports and papers
-                by running an analysis and then cutting and pasting
-                the results into Word. This is an approach to science
-                that combines the writing and the programming as a
-                single, cohesive piece.
-              </li>
-              <li>
-                Literate Programming is a vast topic and is worthy of
-                multiple presentations in its own right. Donald
-                Knuth's ideas have had a deep impact on how I prefer
-                to approach science. For the next few minutes, I would
-                like to show you some simple examples of what literate
-                programming means, to me.
-              </li>
-              <li>
-                At this point, it is worth pointing out, this
-                presentation is an example of literate programming. In
-                the following slides, we will look at some data, and
-                pictures. I didn't cut and paste this information into
-                this slide show. I embedded it into the slide
-                show. Let me show you what I mean. But, to do that, I
-                need a data set.
-              </li>
-            </ul>
-          </aside>
-		</section>
-
-        <!-- MTCARS -------------------------------------------------------- -->
         <section>
-          <h2>MTCARS</h2>
-          <p style="text-align:left;">
-            The data was extracted from the 1974 Motor Trend US
-            magazine, and comprises fuel consumption and 10 aspects of
-            automobile design and performance for 32 automobiles (1973
-            - 1974 models).
-          </p>
-          <aside class="notes">
-            <ul>
-              <li>
-                The MTCARS data set is commonly used in R examples when doing
-                linear regressions. Since it works for everyone else, I
-                decided to do it too.
-              </li>
-            </ul>
-          </aside>
-        </section>
+          <h2>Open Ecosystem: So What?</h2>
 
-        <!-- MTCARS - Just A Glimpse --------------------------------------- -->
-        <section>
-          <h2>MTCARS - Just A Glimpse</h2>
-
-          <small>
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">data</span><span class="hl std">(mtcars)</span>
-<span class="hl kwd">kable</span><span class="hl std">(</span><span class="hl kwd">head</span><span class="hl std">(mtcars))</span>
-</pre></div>
-<table>
- <thead>
-  <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:right;"> mpg </th>
-   <th style="text-align:right;"> cyl </th>
-   <th style="text-align:right;"> disp </th>
-   <th style="text-align:right;"> hp </th>
-   <th style="text-align:right;"> drat </th>
-   <th style="text-align:right;"> wt </th>
-   <th style="text-align:right;"> qsec </th>
-   <th style="text-align:right;"> vs </th>
-   <th style="text-align:right;"> am </th>
-   <th style="text-align:right;"> gear </th>
-   <th style="text-align:right;"> carb </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Mazda RX4 </td>
-   <td style="text-align:right;"> 21.0 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 160 </td>
-   <td style="text-align:right;"> 110 </td>
-   <td style="text-align:right;"> 3.90 </td>
-   <td style="text-align:right;"> 2.620 </td>
-   <td style="text-align:right;"> 16.46 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Mazda RX4 Wag </td>
-   <td style="text-align:right;"> 21.0 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 160 </td>
-   <td style="text-align:right;"> 110 </td>
-   <td style="text-align:right;"> 3.90 </td>
-   <td style="text-align:right;"> 2.875 </td>
-   <td style="text-align:right;"> 17.02 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Datsun 710 </td>
-   <td style="text-align:right;"> 22.8 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 108 </td>
-   <td style="text-align:right;"> 93 </td>
-   <td style="text-align:right;"> 3.85 </td>
-   <td style="text-align:right;"> 2.320 </td>
-   <td style="text-align:right;"> 18.61 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Hornet 4 Drive </td>
-   <td style="text-align:right;"> 21.4 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 258 </td>
-   <td style="text-align:right;"> 110 </td>
-   <td style="text-align:right;"> 3.08 </td>
-   <td style="text-align:right;"> 3.215 </td>
-   <td style="text-align:right;"> 19.44 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Hornet Sportabout </td>
-   <td style="text-align:right;"> 18.7 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 360 </td>
-   <td style="text-align:right;"> 175 </td>
-   <td style="text-align:right;"> 3.15 </td>
-   <td style="text-align:right;"> 3.440 </td>
-   <td style="text-align:right;"> 17.02 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Valiant </td>
-   <td style="text-align:right;"> 18.1 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 225 </td>
-   <td style="text-align:right;"> 105 </td>
-   <td style="text-align:right;"> 2.76 </td>
-   <td style="text-align:right;"> 3.460 </td>
-   <td style="text-align:right;"> 20.22 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-</tbody>
-</table>
-
-</div></div>
-          </small>
-          <p>Source: <a href="http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html</a>
-            
-            <aside class="notes">
-              <ul>
-                <li>
-                  This is the first 10 lines of the
-                  mtcars data set.
-                </li>
-                <li>
-                  We are going to focus on the mpg, cyl, and
-                  disp columns.
-                </li>
-                <li>
-                  Here, I am displaying the code used to
-                  produce the tabular display. As we will
-                  see, I don't have to do that. Sometimes it
-                  is beneficial to do so. Usually it is not.
-                </li>
-                <li>
-                  mpg 	Miles/(US) gallon
-                </li>
-                <li>
-                  cyl 	Number of cylinders
-                </li>
-                <li>
-                  disp 	Displacement (cu.in.)
-                </li>
-                <li>
-                  hp 	Gross horsepower
-                </li>
-                <li>
-                  drat 	Rear axle ratio
-                </li>
-                <li>
-                  wt 	Weight (lb/1000)
-                </li>
-                <li>
-                  qsec 	1/4 mile time
-                </li>
-                <li>
-                  vs 	V/S
-                </li>
-                <li>
-                  am 	Transmission (0 = automatic, 1 =
-                  manual)
-                </li>
-                <li>
-                  gear 	Number of forward gears
-                </li>
-                <li>
-                  carb 	Number of carburetors
-                </li>
-              </ul>
-            </aside>
-        </section>
-
-        <!-- R Markdown ---------------------------------------------------- -->
-        <section>
-          <h2> R Markdown</h2>
-          <small style="text-align:left;">
-            <code style="text-align:left;">
-              ---<br/>
-              title: Minimal Markdown Example<br/>
-              author: Andy Choens, MSW<br/>
-              ---<br/>
-              <br/>
-              This is a simple, minimal example of report written in R markdown. The
-              purpose of this report is two fold:<br/>
-              <br/>
-              1. To enlighten you about the relationship between engine displacement
-              and gas mileage.<br/>
-              2. Provide an accessible introduction to Literate Programming.<br/>
-              <br/>
-              The source of the data is the 1974 Motor Trend USA Magazine.<br/>
-              <br/>
-              ```{r echo=FALSE}<br/>
-              <br/>
-              ## Init R and Config<br/>
-              library(ggplot2)<br/>
-              data(mtcars)<br/>
-              <br/>
-              ```<br/>
-            </code>
-          </small>
-          <aside class="notes">
-            <ul>
-              <li>
-                You can build a literate programming in HTML,
-                Word, LaTeX, etc. And all of those languages
-                and tools have their place. But right now I
-                want to focus on something called R Markdown.
-              </li>
-              <li>
-                Walk through the parts of the document.
-              </li>
-              <li>
-                95 lines of text and programming.
-              </li>
-            </ul>
-          </aside>
-        </section>
-
-        <!-- Insert A Graph ------------------------------------------------ -->
-        <section>
-          <h2>Insert a Graph</h2>
-          <small style="text-align:left;">
-            <code>
-              # Scatterplot<br/>
-              <br/>
-              Displacement is the independent variable. Gas mileage is the dependent
-              variable. Correlation does not imply causation, except for this time
-              when it does.<br/>
-              <br/>
-              ```{r echo=FALSE}<br/>
-              <br/>
-              ggplot(data = mtcars, aes(x=disp, y=mpg)) + geom_point(shape=1) + geom_smooth(method=lm)<br/>
-              <br/>
-              ```<br/>
-            </code>
-          </small>
-        </section>
-
-        <!-- Transparent, Reproducible ------------------------------------- -->
-        <section>
-          <h2>Transparent, Reproducible</h2>
           <ul>
             <li>
-              <a href="vignettes/minimal-markdown.Rmd">Code</a>
+              Anyone can extend R. Write a package.
             </li>
             <li>
-              <a href="vignettes/minimal-markdown.pdf">PDF: <small><code>render("vignettes/minimal-markdown.Rmd", pdf_document())</code></small></a>
+              R-CRAN and GitHub have global audiences.
             </li>
             <li>
-              <a href="vignettes/minimal-markdown.docx">Word: <small><code>render("vignettes/minimal-markdown.Rmd", word_document())</code></small></a>
-            </li>
+              Integration in corporate tools  == New users.
             <li>
-              <a href="vignettes/minimal-markdown.html">HTML: <small><code>render("vignettes/minimal-markdown.Rmd", html_document())</code></small></a>
+              If you don't like it, do it your way. (SQL Utils)
             </li>
-            <aside class="notes">
-              <ul>
-                <li>
-                  How many of you have written a report, only to
-                  discover you made an error when cutting and pasting
-                  your results into Word? Literate programming removes
-                  errors due to cutting and pasting. The output is
-                  transparent and reproducible.
-                </li>
-                <li>
-                  It is transparent, because you can look at
-                  the data and look at the code and know where
-                  the numbers come from. It is reproducible,
-                  because I will get the exact same results
-                  EVERY time I run this "report".
-                </li>
-                <li>
-                  And if you give me a new data set (formatted
-                  the same way), I can spit out a new, equally
-                  accurate report in seconds. You cannot make
-                  these claims when you assemble a report by hand.
-                </li>
-                <li>
-                  Science should be reproducible and verifiable. 
-                </li>
-                <li>
-                  Alaska Project Example: Trying to reproduce another
-                  analyst's work.
-                </li>
-              </ul>
-            </aside>
         </section>
 
-        <!-- The Return of SHINY ------------------------------------------- -->
         <section>
-          <h2>The Return of SHINY</h2>
-          <a href="http://choens.shinyapps.io/why-r-shiny">
-            <img src="img/screenshots/shiny.png" width="100%">
-          </a>
-          <aside class="notes">
-            <ul>
-              <li>
-                R SHINY, the customizable interface for R is
-                another, more complex form of literate programming.
-              </li>
-              <li>
-                In this case, it is interactive.
-              </li>
-              <li>
-                And that is awesome.
-              </li>
-              <li>
-                Demo
-              </li>
-            </ul>
-          </aside>
+          <h2>Open Ecosystem: So What?</h2>
+          
+          <ul>
+            <li>
+              Tools built in a Cathedral cannot provide this level of
+              organic, dynamic growth and innovation.
+            </li>
         </section>
-        
+                        
         <!-- Section: Open Source / Open Science =========================== -->
 		<section>
           <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
@@ -1367,9 +1123,9 @@
           </aside>
         </section>
 
-        <!-- Even @ DOH ---------------------------------------------------- -->
+        <!-- Even @ Work ---------------------------------------------------- -->
         <section>
-          <h2>Even @ DOH:</h2>
+          <h2>Even @ Work:</h2>
           <table>
             <tr>
               <td><h3>FOSS:</h3></td>
@@ -1496,6 +1252,476 @@
           </aside>
         </section>
 
+                <!-- Literate Programming ------------------------------------------ -->
+		<section>
+          <div style="display:inline-block; margin:0 auto; float:left; width:50%;">
+			<h2>Literate Programming</h2>
+          </div>
+          <div style="display:inline-block; margin:0 auto; float:right; width:50%;">
+            <img src="svg/r.svg" height="75%" width="75%">
+          </div>
+          <aside class="notes">
+            <ul>
+               <li>
+                Everything I have already said is radical enough. But
+                I'm not done.
+              </li>
+              <li>
+                Literate Programming is an old idea, from 1981. Still
+                relevant today.
+              </li>
+              <li>
+                R, and its analytic tools are developed in the
+                Bazaae. But Literate Programming, which combines human
+                readable text with analytic code, creates the
+                opportunity to do science in the Bazaar too.
+              </li>
+            </ul>
+          </aside>
+		</section>
+
+        <section>
+          <h2> Literate? What?</h2>
+
+          <p style="text-align:left;">
+            From <a href="https://en.wikipedia.org/wiki/Literate_programming">Wikipedia</a>:
+          </p>
+          <p style="text-align:left;">
+            The literate programming paradigm, as conceived by Knuth,
+            represents a move away from writing programs in the manner
+            and order imposed by the computer, and instead enables
+            programmers to develop programs in the order demanded by
+            the logic and flow of their thoughts.
+          </p>
+          <p style="text-align:left;">
+            Literate programs
+            are written as an uninterrupted exposition of logic in an
+            ordinary human language, much like the text of an essay,
+            in which macros are included to hide abstractions and
+            traditional source code.
+          </p>
+
+          <aside class="notes">
+            <ul>
+              <li>
+                In other words . . . stop writing reports and papers
+                by running an analysis and then cutting and pasting
+                the results into Word. This is an approach to science
+                that combines the writing and the programming as a
+                single, cohesive piece.
+              </li>
+              <li>
+                Literate Programming is a vast topic and is worthy of
+                multiple presentations in its own right. Donald
+                Knuth's ideas have had a deep impact on how I prefer
+                to approach science. For the next few minutes, I would
+                like to show you some simple examples of what literate
+                programming means, to me.
+              </li>
+              <li>
+                At this point, it is worth pointing out, this
+                presentation is an example of literate programming. In
+                the following slides, we will look at some data, and
+                pictures. I didn't cut and paste this information into
+                this slide show. I embedded it into the slide
+                show. Let me show you what I mean. But, to do that, I
+                need a data set.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Perhaps an Example (or two)?</h2>
+
+          <ul>
+            <li> A Demo Report </li>
+            <li> A BI Dashboard </li>
+            <li> This Presentation </li>
+            <li> Connect Literate Programming to the Bazaar</li>
+          </ul>
+        </section>
+        <!-- MTCARS -------------------------------------------------------- -->
+        <section>
+          <h2>MTCARS</h2>
+          <p style="text-align:left;">
+            The data was extracted from the 1974 Motor Trend US
+            magazine, and comprises fuel consumption and 10 aspects of
+            automobile design and performance for 32 automobiles (1973
+            - 1974 models).
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>
+                The MTCARS data set is commonly used in R examples when doing
+                linear regressions. Since it works for everyone else, I
+                decided to do it too.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- MTCARS - Just A Glimpse --------------------------------------- -->
+        <section>
+          <h2>MTCARS - Just A Glimpse</h2>
+
+          <p style="text-align:left;">R code to build the table:</p>
+          
+          <small>
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">data</span><span class="hl std">(mtcars)</span>
+<span class="hl kwd">kable</span><span class="hl std">(</span><span class="hl kwd">head</span><span class="hl std">(mtcars))</span>
+</pre></div>
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> mpg </th>
+   <th style="text-align:right;"> cyl </th>
+   <th style="text-align:right;"> disp </th>
+   <th style="text-align:right;"> hp </th>
+   <th style="text-align:right;"> drat </th>
+   <th style="text-align:right;"> wt </th>
+   <th style="text-align:right;"> qsec </th>
+   <th style="text-align:right;"> vs </th>
+   <th style="text-align:right;"> am </th>
+   <th style="text-align:right;"> gear </th>
+   <th style="text-align:right;"> carb </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Mazda RX4 </td>
+   <td style="text-align:right;"> 21.0 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> 110 </td>
+   <td style="text-align:right;"> 3.90 </td>
+   <td style="text-align:right;"> 2.620 </td>
+   <td style="text-align:right;"> 16.46 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mazda RX4 Wag </td>
+   <td style="text-align:right;"> 21.0 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> 110 </td>
+   <td style="text-align:right;"> 3.90 </td>
+   <td style="text-align:right;"> 2.875 </td>
+   <td style="text-align:right;"> 17.02 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Datsun 710 </td>
+   <td style="text-align:right;"> 22.8 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 108 </td>
+   <td style="text-align:right;"> 93 </td>
+   <td style="text-align:right;"> 3.85 </td>
+   <td style="text-align:right;"> 2.320 </td>
+   <td style="text-align:right;"> 18.61 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Hornet 4 Drive </td>
+   <td style="text-align:right;"> 21.4 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 258 </td>
+   <td style="text-align:right;"> 110 </td>
+   <td style="text-align:right;"> 3.08 </td>
+   <td style="text-align:right;"> 3.215 </td>
+   <td style="text-align:right;"> 19.44 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Hornet Sportabout </td>
+   <td style="text-align:right;"> 18.7 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 360 </td>
+   <td style="text-align:right;"> 175 </td>
+   <td style="text-align:right;"> 3.15 </td>
+   <td style="text-align:right;"> 3.440 </td>
+   <td style="text-align:right;"> 17.02 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Valiant </td>
+   <td style="text-align:right;"> 18.1 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 225 </td>
+   <td style="text-align:right;"> 105 </td>
+   <td style="text-align:right;"> 2.76 </td>
+   <td style="text-align:right;"> 3.460 </td>
+   <td style="text-align:right;"> 20.22 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+</tbody>
+</table>
+
+</div></div>
+          </small>
+          
+          <p><small>Source: <a href="http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html</a></small>
+            
+            <aside class="notes">
+              <ul>
+                <li>
+                  This is the first 10 lines of the
+                  mtcars data set.
+                </li>
+                <li>
+                  We are going to focus on the mpg, cyl, and
+                  disp columns.
+                </li>
+                <li>
+                  Here, I am displaying the code used to
+                  produce the tabular display. As we will
+                  see, I don't have to do that. Sometimes it
+                  is beneficial to do so. Usually it is not.
+                </li>
+                <li>
+                  mpg 	Miles/(US) gallon
+                </li>
+                <li>
+                  cyl 	Number of cylinders
+                </li>
+                <li>
+                  disp 	Displacement (cu.in.)
+                </li>
+                <li>
+                  hp 	Gross horsepower
+                </li>
+                <li>
+                  drat 	Rear axle ratio
+                </li>
+                <li>
+                  wt 	Weight (lb/1000)
+                </li>
+                <li>
+                  qsec 	1/4 mile time
+                </li>
+                <li>
+                  vs 	V/S
+                </li>
+                <li>
+                  am 	Transmission (0 = automatic, 1 =
+                  manual)
+                </li>
+                <li>
+                  gear 	Number of forward gears
+                </li>
+                <li>
+                  carb 	Number of carburetors
+                </li>
+              </ul>
+            </aside>
+        </section>
+
+        <!-- R Markdown ---------------------------------------------------- -->
+        <section>
+          <h2> R Markdown</h2>
+          <small style="text-align:left;">
+            <code style="text-align:left;">
+              ---<br/>
+              title: Minimal Markdown Example<br/>
+              author: Andy Choens, MSW<br/>
+              ---<br/>
+              <br/>
+              This is a simple, minimal example of report written in R markdown. The
+              purpose of this report is two fold:<br/>
+              <br/>
+              1. To enlighten you about the relationship between engine displacement
+              and gas mileage.<br/>
+              2. Provide an accessible introduction to Literate Programming.<br/>
+              <br/>
+              The source of the data is the 1974 Motor Trend USA Magazine.<br/>
+              <br/>
+              ```{r echo=FALSE}<br/>
+              <br/>
+              ## Init R and Config<br/>
+              library(ggplot2)<br/>
+              data(mtcars)<br/>
+              <br/>
+              ```<br/>
+            </code>
+          </small>
+          <aside class="notes">
+            <ul>
+              <li>
+                You can build a literate programming in HTML,
+                Word, LaTeX, etc. And all of those languages
+                and tools have their place. But right now I
+                want to focus on something called R Markdown.
+              </li>
+              <li>
+                Walk through the parts of the document.
+              </li>
+              <li>
+                95 lines of text and programming.
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Insert A Graph ------------------------------------------------ -->
+        <section>
+          <h2>Insert a Graph</h2>
+          <small style="text-align:left;">
+            <code>
+              # Scatterplot<br/>
+              <br/>
+              Displacement is the independent variable. Gas mileage is the dependent
+              variable. Correlation does not imply causation, except for this time
+              when it does.<br/>
+              <br/>
+              ```{r echo=FALSE}<br/>
+              <br/>
+              ggplot(data = mtcars, aes(x=disp, y=mpg)) + geom_point(shape=1) + geom_smooth(method=lm)<br/>
+              <br/>
+              ```<br/>
+            </code>
+          </small>
+        </section>
+
+        <!-- Transparent, Reproducible ------------------------------------- -->
+        <section>
+          <h2>Transparent, Reproducible</h2>
+
+          <ul>
+            <li>
+              This "report" integrates natural human speech and
+              analytic code.
+            </li>
+            <li>
+              The plain text report is easily shared openly via a
+              version control tool (Github).
+            </li>
+            <li>
+              <a href="vignettes/minimal-markdown.Rmd">Code</a>
+            </li>
+            <li>
+              <a href="vignettes/minimal-markdown.pdf">PDF: <small><code>render("vignettes/minimal-markdown.Rmd", pdf_document())</code></small></a>
+            </li>
+            <li>
+              <a href="vignettes/minimal-markdown.docx">Word: <small><code>render("vignettes/minimal-markdown.Rmd", word_document())</code></small></a>
+            </li>
+            <li>
+              <a href="vignettes/minimal-markdown.html">HTML: <small><code>render("vignettes/minimal-markdown.Rmd", html_document())</code></small></a>
+            </li>
+            <aside class="notes">
+              <ul>
+                <li>
+                  How many of you have written a report, only to
+                  discover you made an error when cutting and pasting
+                  your results into Word? Literate programming removes
+                  errors due to cutting and pasting. The output is
+                  transparent and reproducible.
+                </li>
+                <li>
+                  It is transparent, because you can look at
+                  the data and look at the code and know where
+                  the numbers come from. It is reproducible,
+                  because I will get the exact same results
+                  EVERY time I run this "report".
+                </li>
+                <li>
+                  And if you give me a new data set (formatted
+                  the same way), I can spit out a new, equally
+                  accurate report in seconds. You cannot make
+                  these claims when you assemble a report by hand.
+                </li>
+                <li>
+                  Science should be reproducible and verifiable. 
+                </li>
+                <li>
+                  Alaska Project Example: Trying to reproduce another
+                  analyst's work.
+                </li>
+              </ul>
+            </aside>
+        </section>
+
+        <!-- Open, Bazaar, Research ------------------------------------- -->
+        <section>
+          <h2>Open, Bazaar, Research</h2>
+
+          <ul>
+            <li>
+              R isn't easier to use. It isn't faster.
+            </li>
+            <li>
+              The Bazaar, is in R's DNA.
+            </li>
+            <li>
+              Thse norms and practices, are challenging the status
+              quo.
+            </li>
+            <li>
+              Science should be in the open, not in the Cathedral.
+            </li>
+            <li>
+              Other tools can do this, to a limited degree but aren't
+              pushing this agenda.
+            </li>
+            <li>
+              <a href="https://github.com/Choens/why-r/blob/master/vignettes/minimal-markdown.Rmd">Math
+              is the language of Science. Code is the language of Math.</a>
+            </li>
+          </ul>
+            <aside class="notes">
+              <ul>
+                <li>
+                  The PDF and Word file are there too, but they can't
+                  be opened via the web through GitHub. You would need
+                  to download the project.
+                </li>
+              </ul>
+            </aside>
+        </section>        
+        
+        <!-- The Return of SHINY ------------------------------------------- -->
+        <section>
+          <h2>Build Your Own BI Tool</h2>
+          <a href="http://choens.shinyapps.io/why-r-shiny">
+            <img src="img/screenshots/shiny.png" width="100%">
+          </a>
+          <aside class="notes">
+            <ul>
+              <li>
+                R SHINY, the customizable interface for R is
+                another, more complex form of literate programming.
+              </li>
+              <li>
+                In this case, it is interactive.
+              </li>
+              <li>
+                And that is awesome.
+              </li>
+              <li>
+                Demo
+              </li>
+            </ul>
+          </aside>
+        </section>
+        
         <!-- Real: Code, Science, People ----------------------------------- -->
         <section>
           <h2>Real: Code, Science, People</h2>
@@ -1548,57 +1774,6 @@
                 advantage of this technology. This is open
                 science. Completely transparent. Completely
                 reproducible. By anyone on earth.
-              </li>
-            </ul>
-          </aside>
-        </section>
-
-        <!-- Open Data or Open Science? ------------------------------------ -->
-        <section>
-          <h2>Open Data or Open Science?</h2>
-          <ul>
-            <li>
-              Hint: The presenter wants the latter.
-            </li>
-            <li>
-              <a href="https://data.ny.gov">data.ny.gov</a>
-            </li>
-            <li>
-              Open Data is more powerful when it comes with
-              open, reproducible, transparent analysis
-            </li>
-            <li>
-              Added benefit: Open science comes with no
-              additional privacy concerns.
-            </li>
-          </ul>
-          <aside class="notes">
-            <ul>
-              <li>
-                The Cuomo administration has made great strides in
-                publishing government data to the public.
-              </li>
-              <li>
-                But data without code is fairly useless. True
-                transparency comes from a combination of the two. Open
-                science, transparent and reproducible, like what the
-                Nightscout project is doing, enables citizens to
-                understand its government.
-              </li>
-              <li>
-                Many of these open data sets are anonymous versions
-                of data sets used internally for measurement and
-                evaluation. Citizens should have access to the code
-                AND the data, because you need both to understand. And
-                when a license to SAS and SPSS cost thousands of
-                dollars, I argue that these tools are fundamentally
-                inappropriate for this purpose.
-              </li>
-              <li>
-                As citizens we have a right to know what government is
-                doing. Wrapping that understanding up in a tool that
-                is inaccessible to all by the wealthiest does not lead
-                to further citizen engagement.
               </li>
             </ul>
           </aside>
